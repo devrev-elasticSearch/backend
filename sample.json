@@ -1,16 +1,2308 @@
-[
-  {
-    "title": "Sunday Daily Thread: What's everyone working on this week?",
-    "text": "# Weekly Thread: What's Everyone Working On This Week? 🛠️ Hello /r/Python! It's time to share what you've been working on! Whether it's a work-in-progress, a completed masterpiece, or just a rough idea, let us know what you're up to! ## How it Works: 1. **Show &amp; Tell**: Share your current projects, completed works, or future ideas. 2. **Discuss**: Get feedback, find collaborators, or just chat about your project. 3. **Inspire**: Your project might inspire someone else, just as you might get inspired here. ## Guidelines: * Feel free to include as many details as you'd like. Code snippets, screenshots, and links are all welcome. * Whether it's your job, your hobby, or your passion project, all Python-related work is welcome here. ## Example Shares: 1. **Machine Learning Model**: Working on a ML model to predict stock prices. Just cracked a 90% accuracy rate! 2. **Web Scraping**: Built a script to scrape and analyze news articles. It's helped me understand media bias better. 3. **Automation**: Automated my home lighting with Python and Raspberry Pi. My life has never been easier! Let's build and grow together! Share your journey and learn from others. Happy coding! 🌟",
-    "date": "2024-02-18T00:00:08.000Z",
-    "source": "reddit",
-    "metadata": { "numComments": 16 }
+{
+  "17084514406933472": {
+    "keywords": [
+      "can't use the app with the current changes",
+      "If the PPF account can also be examined"
+    ],
+    "first_order_labels": {
+      "label_list": ["Issues related to managing bank accounts"]
+    },
+    "second_order_labels": {
+      "label_list": [
+        "other issues",
+        "Issues related to Check bank account balance"
+      ],
+      "label_to_keylist": {
+        "Issues related to Check bank account balance": [
+          "can't use the app with the current changes"
+        ],
+        "other issues": ["If the PPF account can also be examined"]
+      }
+    },
+    "tagging_metadata": {
+      "sentiment": "positive",
+      "priority": "Low",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "945423f1-07b7-4599-9f9f-1cbda20a3d35",
+      "userName": "Referral Code - j3p830",
+      "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjUlba6XHmCjMwG-6-U0Qx2iyPsBoDTJl3ufyfu6O6TxmQ",
+      "content": "Better than other apps. I can't use the app with the current changes. Previous Review Very good banking software that does it everything. I adore this application. If the PPF account can also be examined, it would be fantastic. The user interface is quite intuitive, and the application is light and quick. I've watched this software develop from a basic version with limited features to the robust version it is today. far superior to its rival banking apps.",
+      "score": 5,
+      "thumbsUpCount": 4597,
+      "reviewCreatedVersion": "212.1.1 (arm64-v8a_release_flutter)",
+      "at": "2024-02-05 15:13:15",
+      "replyContent": null,
+      "repliedAt": "NaN",
+      "appVersion": "212.1.1 (arm64-v8a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
   },
-
-  {
-    "title": "Ticket created from Playstore review https://play.google.com/store/apps/details?id=com.scopely.monopolygo&reviewId=24a63269-20a8-4733-8fa9-ce3885195f1c",
-    "text": "No good for playtime",
-    "date": "2024-02-16T21:21:36.556Z",
-    "source": "playstore"
+  "17084514406933678": {
+    "keywords": ["None"],
+    "first_order_labels": { "label_list": [] },
+    "second_order_labels": {
+      "label_list": ["other issues"],
+      "label_to_keylist": { "other issues": ["None"] }
+    },
+    "tagging_metadata": {
+      "sentiment": "positive",
+      "priority": "Low",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "f67ce3de-9d79-426e-b42c-8b9c9336e7c1",
+      "userName": "Refferal Code- c13eo73",
+      "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjU-HI8_IaUZ5fkN9ZH_Yi74Vgtfy7iuBJIgYx6zbrSadA",
+      "content": "Google Pay is my go-to UPI app for all my digital transactions. It's incredibly user-friendly, allowing me to send and receive money effortlessly. The interface is intuitive, making navigation a breeze. What I appreciate most is its reliability; transactions are swift and secure. Plus, the app offers a range of services like bill payments and recharge options, making it a one-stop solution for all my financial needs. Highly recommended!",
+      "score": 5,
+      "thumbsUpCount": 2404,
+      "reviewCreatedVersion": "213.1.8 (arm64-v8a_release_flutter)",
+      "at": "2024-02-11 07:59:42",
+      "replyContent": null,
+      "repliedAt": "NaN",
+      "appVersion": "213.1.8 (arm64-v8a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
+  },
+  "17084514406933744": {
+    "keywords": [
+      "sluggish and jittery performance",
+      "scrolling issues",
+      "lack of option to copy transaction details"
+    ],
+    "first_order_labels": {
+      "label_list": [
+        "Issues realted to Issues related to Bug Reports",
+        "Issues related to Digital Payments"
+      ]
+    },
+    "second_order_labels": {
+      "label_list": [
+        "Issues realted to Issues related to Bug Reports",
+        "Issues related to Simple and secure payments app",
+        "other issues"
+      ],
+      "label_to_keylist": {
+        "Issues realted to Issues related to Bug Reports": [
+          "sluggish and jittery performance"
+        ],
+        "other issues": ["scrolling issues"],
+        "Issues related to Simple and secure payments app": [
+          "lack of option to copy transaction details"
+        ]
+      }
+    },
+    "tagging_metadata": {
+      "sentiment": "negative",
+      "priority": "Moderate",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "aa864320-1679-4b67-8ec6-b8271c07685b",
+      "userName": "Subhadeep Dey",
+      "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjVIC2w6qMIONiNRa3F3GOpdC-ZZ4ZWXpWZnpntqI_TM0dz3",
+      "content": "It has been over three years since the Flutter-based version was released, yet the app still feels very sluggish and jittery even on a flagship phone, especially during scrolling. However, I really like the fact it stores transaction history indefinitely, and doesn't hide the VPA of online merchants in transaction history, which PhonePe is notorious for. It would have been great if you could add an option to copy transaction details to clipboard.",
+      "score": 2,
+      "thumbsUpCount": 2974,
+      "reviewCreatedVersion": "212.1.1 (arm64-v8a_release_flutter)",
+      "at": "2024-02-02 06:52:30",
+      "replyContent": null,
+      "repliedAt": "NaN",
+      "appVersion": "212.1.1 (arm64-v8a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
+  },
+  "17084514406933808": {
+    "keywords": [
+      "Frequent pop up saying 'No internet available' when on mobile data",
+      "Need improvement in handling mobile data connection"
+    ],
+    "first_order_labels": {
+      "label_list": ["Issues related to managing bank accounts"]
+    },
+    "second_order_labels": {
+      "label_list": [
+        "other issues",
+        "Issues related to Link bank account with registered mobile number"
+      ],
+      "label_to_keylist": {
+        "Issues related to Link bank account with registered mobile number": [
+          "Frequent pop up saying 'No internet available' when on mobile data"
+        ],
+        "other issues": ["Need improvement in handling mobile data connection"]
+      }
+    },
+    "tagging_metadata": {
+      "sentiment": "positive",
+      "priority": "Low",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "b90c8ecf-3ca9-4fe5-9d4b-5fd6eaf8dd15",
+      "userName": "Referral code:- 84v027",
+      "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjWrMBVcmxsJsU1GhDLRy-b_VKGvMLmUTn9f0SQ8E-5dhg",
+      "content": "I loved this app....!!!! In my experience of using the app for all kinds of payments and others, the performance is outstanding and smooth. The app layout and interface is very impressive. The cash back points for various payments is an added bonus. Kudos to the App team. However a small point to note for improvement. When the phone is on mobile data and not on wifi, a pop up appears frequently at the bottom saying \" No internet available\". So everytime it has to be clicked and removed....!",
+      "score": 5,
+      "thumbsUpCount": 6429,
+      "reviewCreatedVersion": "210.1.2 (arm64-v8a_release_flutter)",
+      "at": "2024-01-25 06:00:39",
+      "replyContent": null,
+      "repliedAt": "NaN",
+      "appVersion": "210.1.2 (arm64-v8a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
+  },
+  "17084514406933880": {
+    "keywords": [
+      "not functioning properly",
+      "keyboard does not appear",
+      "unable to transfer money",
+      "issue with scanning barcodes"
+    ],
+    "first_order_labels": {
+      "label_list": ["Issues related to Digital Payments"]
+    },
+    "second_order_labels": {
+      "label_list": [
+        "Issues related to QR code payments",
+        "other issues",
+        "Issues related to Send money via UPI transfers"
+      ],
+      "label_to_keylist": {
+        "other issues": [
+          "not functioning properly",
+          "keyboard does not appear"
+        ],
+        "Issues related to Send money via UPI transfers": [
+          "unable to transfer money"
+        ],
+        "Issues related to QR code payments": ["issue with scanning barcodes"]
+      }
+    },
+    "tagging_metadata": {
+      "sentiment": "neutral",
+      "priority": "Moderate",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "699c9a70-9f86-4bbe-918d-4522944ace78",
+      "userName": "Referral Code - j3p830",
+      "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjUwxhnUjl-khBhAKHKdsyUrUG1dgzreLi5sENkDyc5EYg",
+      "content": "Unique features are very interesting. The Fastest And Greatest App...But for the past month, it hasn't been functioning properly. I am able to use any barcode to scan and process payments. But my keyboard does not appear when I want to transfer money to someone via mobile. Not at all. Help, please; I've tried everything. I deleted the app's data and cache and even uninstalled and reloaded it. But, all in vain. Even after searching Google and YouTube, I still can't seem to grasp the issue.",
+      "score": 5,
+      "thumbsUpCount": 6200,
+      "reviewCreatedVersion": "205.1.6 (arm64-v8a_release_flutter)",
+      "at": "2024-01-15 06:10:56",
+      "replyContent": null,
+      "repliedAt": "NaN",
+      "appVersion": "205.1.6 (arm64-v8a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
+  },
+  "17084514406933940": {
+    "keywords": [
+      "transaction failed due to network issue",
+      "money debited but no message received",
+      "delay in money credit",
+      "asking for bank statement"
+    ],
+    "first_order_labels": {
+      "label_list": [
+        "Issues realted to Issues related to  debit/credit cards compatibility",
+        "Issues realted to Issues related to Transaction failure",
+        "Issues related to Provide loans"
+      ]
+    },
+    "second_order_labels": {
+      "label_list": [
+        "Issues realted to Issues related to  debit/credit cards compatibility",
+        "other issues",
+        "Issues realted to Issues related to Transaction failure",
+        "Issues related to Provide loans"
+      ],
+      "label_to_keylist": {
+        "Issues realted to Issues related to Transaction failure": [
+          "transaction failed due to network issue"
+        ],
+        "Issues realted to Issues related to  debit/credit cards compatibility": [
+          "money debited but no message received"
+        ],
+        "Issues related to Provide loans": ["delay in money credit"],
+        "other issues": ["asking for bank statement"]
+      }
+    },
+    "tagging_metadata": {
+      "sentiment": "negative",
+      "priority": "High",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "385200b5-151c-4bb4-b95b-e90053690878",
+      "userName": "Shaik Arshad Ali",
+      "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocLx2jcMZNXZUcK2P5udQQ2_sUucidt6Q4itb-ciamkR=mo",
+      "content": "Everything is fine. But, recently I got an issue like my transaction is failed due to network issue. And in the transaction history the status is failed. But my money got debited from the bank account and I didn't got any message like money got debited,but when I check my balance the money got debited. Then, I raised a ticket. They said the money will be credited within 3days. Now, they are asking for the bank statement after 3 days. I really don't like this feature. Please fix this.",
+      "score": 1,
+      "thumbsUpCount": 718,
+      "reviewCreatedVersion": "212.1.1 (arm64-v8a_release_flutter)",
+      "at": "2024-02-10 03:36:20",
+      "replyContent": null,
+      "repliedAt": "NaN",
+      "appVersion": "212.1.1 (arm64-v8a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
+  },
+  "17084514406934006": {
+    "keywords": [
+      "issue with resetting PIN",
+      "something went wrong with bank servers"
+    ],
+    "first_order_labels": {
+      "label_list": [
+        "Issues related to Multiple layers of security from bank and Google",
+        "Issues related to Set UPI PIN for security"
+      ]
+    },
+    "second_order_labels": {
+      "label_list": [
+        "Issues related to Multiple layers of security from bank and Google",
+        "Issues related to Set UPI PIN for security"
+      ],
+      "label_to_keylist": {
+        "Issues related to Set UPI PIN for security": [
+          "issue with resetting PIN"
+        ],
+        "Issues related to Multiple layers of security from bank and Google": [
+          "something went wrong with bank servers"
+        ]
+      }
+    },
+    "tagging_metadata": {
+      "sentiment": "neutral",
+      "priority": "Moderate",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "28f6ad51-c4d8-4e08-bbea-46757f93f070",
+      "userName": "Irbaz Sadiq",
+      "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjXjQCxuIQ2LE-fnTdZOWjHoJZBdo_T9-1csAyd5T8klW3c",
+      "content": "Since the last few days I've ran through some new issue which never occured before. I tried to reset my Pin and somehow it interfaces with a statement \"something went wrong with the bank servers\". Although this could be an issue with the Bank but I believe that if the developers take a deeper look into this app, then the issue could potentially be resolved. Hope you'll look forward into this.",
+      "score": 2,
+      "thumbsUpCount": 5895,
+      "reviewCreatedVersion": "205.1.5 (arm64-v8a_release_flutter)",
+      "at": "2023-12-19 06:54:44",
+      "replyContent": "Don't worry, Irbaz. This happens sometime due to heavy traffic on bank servers. We suggest trying again after a couple of hours. Thanks for being patient.",
+      "repliedAt": "2023-12-19 07:15:43",
+      "appVersion": "205.1.5 (arm64-v8a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
+  },
+  "17084514406934068": {
+    "keywords": [
+      "Something went wrong error during bank transactions",
+      "Issue specific to Google Pay",
+      "Disappointing",
+      "Previous reliability"
+    ],
+    "first_order_labels": {
+      "label_list": [
+        "Issues related to Set UPI PIN for security",
+        "Issues related to managing bank accounts"
+      ]
+    },
+    "second_order_labels": {
+      "label_list": [
+        "other issues",
+        "Issues related to Set UPI PIN for security",
+        "Issues related to Link bank account with registered mobile number"
+      ],
+      "label_to_keylist": {
+        "Issues related to Link bank account with registered mobile number": [
+          "Something went wrong error during bank transactions"
+        ],
+        "Issues related to Set UPI PIN for security": [
+          "Issue specific to Google Pay"
+        ],
+        "other issues": ["Disappointing", "Previous reliability"]
+      }
+    },
+    "tagging_metadata": {
+      "sentiment": "negative",
+      "priority": "Moderate",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "9cc93627-2054-4adf-ade4-d7021b721f88",
+      "userName": "Saurabh Pandey",
+      "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjUJzCNfNPyXqz3f0L6TIqWOzsIBy6ESkvtSuGvqMuGApi4",
+      "content": "I have been a user of Google Pay for a considerable period, but recently, my experience has been less than satisfactory. For the past month, Google Pay has been consistently showing a 'Something went wrong' error during bank transactions. This issue is specific to Google Pay, as other payment apps work fine. Disappointing, considering its previous reliability.",
+      "score": 2,
+      "thumbsUpCount": 2941,
+      "reviewCreatedVersion": "205.1.6 (arm64-v8a_release_flutter)",
+      "at": "2024-01-06 12:31:42",
+      "replyContent": null,
+      "repliedAt": "NaN",
+      "appVersion": "205.1.6 (arm64-v8a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
+  },
+  "17084514406934128": {
+    "keywords": [
+      "Gpay stopped opening",
+      "black screen",
+      "bug with screen size",
+      "reinstalling doesn't work",
+      "works in small splitted screen"
+    ],
+    "first_order_labels": {
+      "label_list": ["Issues related to Digital Payments"]
+    },
+    "second_order_labels": {
+      "label_list": [
+        "Issues related to Fast and secure payments with debit and credit cards",
+        "other issues"
+      ],
+      "label_to_keylist": {
+        "Issues related to Fast and secure payments with debit and credit cards": [
+          "Gpay stopped opening"
+        ],
+        "other issues": [
+          "black screen",
+          "bug with screen size",
+          "reinstalling doesn't work",
+          "works in small splitted screen"
+        ]
+      }
+    },
+    "tagging_metadata": {
+      "sentiment": "positive",
+      "priority": "High",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "980e0432-96f3-40f0-9c7b-5005ea6916ac",
+      "userName": "Lelin Patel",
+      "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocIXSavG__R7xAWvMVCyxuRLflCmZeBgIDp4tKF9JqiSGg=mo",
+      "content": "Gpay stopped opening since yesterday, goes to black screen. It is definitely a bug may be with screen size during loading. Get the developers to fix it Google, stop telling users to use latest app which itself causes the issue, i have tried re installing it, doesn't work. How ever if i split my screen than it works in a small splitted screen. Thank you for fixing it quickly. \u2b50 \u2b50 \u2b50\u2b50 \u2b50",
+      "score": 5,
+      "thumbsUpCount": 1965,
+      "reviewCreatedVersion": "205.1.5 (arm64-v8a_release_flutter)",
+      "at": "2023-12-31 13:06:44",
+      "replyContent": "Regret the inconvenience, Lelin. We are on top of the Google Pay issue & working on resolving the same at the earliest. Appreciate your understanding.",
+      "repliedAt": "2023-12-15 01:23:48",
+      "appVersion": "205.1.5 (arm64-v8a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
+  },
+  "17084514406934192": {
+    "keywords": [
+      "Trouble with bank payments",
+      "Cashback and rewards not useful",
+      "Bad offers after payment",
+      "Incomplete cashback tasks",
+      "Limited usability for small payments"
+    ],
+    "first_order_labels": {
+      "label_list": [
+        "Issues realted to Issues related to Bug Reports",
+        "Issues related to Refer friends and earn rewards",
+        "Issues related to Digital Payments"
+      ]
+    },
+    "second_order_labels": {
+      "label_list": [
+        "Issues related to Fast and secure payments with debit and credit cards",
+        "Issues related to Convenient bill payments",
+        "Issues related to Refer friends and earn rewards",
+        "Issues realted to Issues related to Bug Reports",
+        "other issues"
+      ],
+      "label_to_keylist": {
+        "Issues realted to Issues related to Bug Reports": [
+          "Trouble with bank payments"
+        ],
+        "Issues related to Refer friends and earn rewards": [
+          "Cashback and rewards not useful"
+        ],
+        "Issues related to Fast and secure payments with debit and credit cards": [
+          "Bad offers after payment"
+        ],
+        "other issues": ["Incomplete cashback tasks"],
+        "Issues related to Convenient bill payments": [
+          "Limited usability for small payments"
+        ]
+      }
+    },
+    "tagging_metadata": {
+      "sentiment": "positive",
+      "priority": "Low",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "c3a07c3f-57fb-4638-bf0f-fea5c7505ade",
+      "userName": "Ananya Mittal",
+      "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjVGPYSmIzA8HV-r58WuDhLNGqkGLRXggPHMtWQTtr7QX10",
+      "content": "I like how easily the payments can be done in some cases. However most of the time when making bank payments, it shows trouble. Whenever you want to make a payment two in a row it stops. Also, the cashback and reward were good first but now they are not useful, relevant or good. The four offers you get after payment are all bad and not useful. Plus, they say to complete tasks for cashback and even if you do that, you won't get the offered cashback. So you can only use it for small payments.",
+      "score": 3,
+      "thumbsUpCount": 12489,
+      "reviewCreatedVersion": "200.1.1 (arm64-v8a_release_flutter)",
+      "at": "2023-11-23 05:18:05",
+      "replyContent": null,
+      "repliedAt": "NaN",
+      "appVersion": "200.1.1 (arm64-v8a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
+  },
+  "17084514406934252": {
+    "keywords": ["Something went wrong error", "No clear error message"],
+    "first_order_labels": {
+      "label_list": ["Issues related to managing bank accounts"]
+    },
+    "second_order_labels": {
+      "label_list": [
+        "other issues",
+        "Issues related to Link bank account with registered mobile number"
+      ],
+      "label_to_keylist": {
+        "other issues": ["Something went wrong error"],
+        "Issues related to Link bank account with registered mobile number": [
+          "No clear error message"
+        ]
+      }
+    },
+    "tagging_metadata": {
+      "sentiment": "negative",
+      "priority": "High",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "b7a05866-a204-47d0-8d51-df98ccdbf4f9",
+      "userName": "Kshitij Sharma",
+      "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjX-ivpYHPwhmxCJHX1Yv4VzPxZ-jMY5E46d2XnQUbfSv-IQ",
+      "content": "I keep getting \"Something went wrong\" error while trying to add my Visa credit card for tap and pay. The worst part is it won't even tell me exactly what went wrong. This is so stupid. Have a clear error message at least! I've tried updating the app, clearing the data and cache as well but nothing seems to work. This is a pathetic experience!!! Fix it asap.",
+      "score": 1,
+      "thumbsUpCount": 1678,
+      "reviewCreatedVersion": "200.1.1 (arm64-v8a_release_flutter)",
+      "at": "2023-11-30 11:11:11",
+      "replyContent": "Regret the inconvenience, Kshitij. We suggest you contact our specialist team for assistance on this: https://goo.gle/2PQQFuc. Our team would be happy to help.",
+      "repliedAt": "2023-11-30 11:31:41",
+      "appVersion": "200.1.1 (arm64-v8a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
+  },
+  "17084514406934326": {
+    "keywords": [
+      "installing plugins",
+      "hackers increasing",
+      "no recoil",
+      "unlimited bullets",
+      "sniper without reloading",
+      "identifying enemies from extra distance"
+    ],
+    "first_order_labels": {
+      "label_list": [
+        "Issues realted to Issues related to Security and Privacy Issues"
+      ]
+    },
+    "second_order_labels": {
+      "label_list": [
+        "other issues",
+        "Issues realted to Issues related to Security and Privacy Issues"
+      ],
+      "label_to_keylist": {
+        "other issues": [
+          "installing plugins",
+          "no recoil",
+          "unlimited bullets",
+          "sniper without reloading",
+          "identifying enemies from extra distance"
+        ],
+        "Issues realted to Issues related to Security and Privacy Issues": [
+          "hackers increasing"
+        ]
+      }
+    },
+    "tagging_metadata": {
+      "sentiment": "positive",
+      "priority": "Low",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "de6c5844-0fe9-4a66-a43f-a7696d5edfe7",
+      "userName": "\u092c\u094b\u0928\u0938 \u0915\u094b\u0921 - e6xi7x",
+      "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjVEB50fCqBiSPMu2ms-9kZyqVuxUglumy5Ymc56uin-NA",
+      "content": "Nice working \ud83d\ude00 The app is excellent as long as the user does not install plugins. I have seen many enemies using no recoil, unlimited bullets, without even reloading the sniper. They can easily identify enemies from extra distance. This is disappointing now. Hackers are increasing every day. What plan have you made to deal with this problem?? Please do something to avoid installation of additional plugins. best regards",
+      "score": 5,
+      "thumbsUpCount": 7354,
+      "reviewCreatedVersion": "195.1.3 (arm64-v8a_release_flutter)",
+      "at": "2023-10-12 18:08:21",
+      "replyContent": null,
+      "repliedAt": "NaN",
+      "appVersion": "195.1.3 (arm64-v8a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
+  },
+  "17084514406934388": {
+    "keywords": [
+      "Card info not easily accessible",
+      "Payment settings not easily adjustable",
+      "Tap-to-pay not available",
+      "Transactions not easily viewable",
+      "Uncomplicated and convenient concept not implemented",
+      "Troubleshooting issues created by Google"
+    ],
+    "first_order_labels": {
+      "label_list": [
+        "Issues related to Multiple layers of security from bank and Google",
+        "Issues realted to Issues related to Requesting for new features",
+        "Issues related to Digital Payments"
+      ]
+    },
+    "second_order_labels": {
+      "label_list": [
+        "Issues related to Fast and secure payments with debit and credit cards",
+        "Issues related to Simple and secure payments app",
+        "Issues related to Multiple layers of security from bank and Google",
+        "Issues realted to Issues related to Requesting for new features",
+        "Issues related to Convenient bill payments",
+        "other issues"
+      ],
+      "label_to_keylist": {
+        "Issues related to Simple and secure payments app": [
+          "Card info not easily accessible"
+        ],
+        "Issues related to Convenient bill payments": [
+          "Payment settings not easily adjustable"
+        ],
+        "Issues related to Fast and secure payments with debit and credit cards": [
+          "Tap-to-pay not available"
+        ],
+        "Issues realted to Issues related to Requesting for new features": [
+          "Transactions not easily viewable"
+        ],
+        "other issues": [
+          "Uncomplicated and convenient concept not implemented"
+        ],
+        "Issues related to Multiple layers of security from bank and Google": [
+          "Troubleshooting issues created by Google"
+        ]
+      }
+    },
+    "tagging_metadata": {
+      "sentiment": "neutral",
+      "priority": "Low",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "40149f7a-8e26-4b8e-a506-9d8713409c51",
+      "userName": "Anthony Zed",
+      "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocJF-FI6N1u8SCUIXVoMfuVcdmiU4TscNBFTFuZBKBqr=mo",
+      "content": "To view your card info you have to open up chrome and go to autofill. If you want to adjust payment settings you need to go the Google app instead. But if you want to tap-to-pay you use google wallet, but if you want to view your transactions you have to use this pointless app. Google took the concept of uncomplicated, convenient, and all in one place, and said \"let's do the polar opposite!\" Half of google searches are just people troubleshooting stupid issues that Google itself created",
+      "score": 1,
+      "thumbsUpCount": 62,
+      "reviewCreatedVersion": "214.1.4 (arm64-v8a_release_flutter)",
+      "at": "2024-02-15 08:08:00",
+      "replyContent": null,
+      "repliedAt": "NaN",
+      "appVersion": "214.1.4 (arm64-v8a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
+  },
+  "17084514406934442": {
+    "keywords": ["ATM fees", "verification process"],
+    "first_order_labels": { "label_list": [] },
+    "second_order_labels": {
+      "label_list": ["other issues"],
+      "label_to_keylist": {
+        "other issues": ["ATM fees", "verification process"]
+      }
+    },
+    "tagging_metadata": {
+      "sentiment": "positive",
+      "priority": "Low",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "fae35b1a-86a2-472e-96b6-dc9809825354",
+      "userName": "Referral Code - 711za8l For 10US",
+      "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjXGJrGgAVA6HTYjxaLgMcUa_haoiiZ3CdFAlCW2p6MMtw",
+      "content": "If I could rate 10 stars I would. I can't say enough good things about Cash App! I use it for all my banking needs. I get paid 3 days early, I save money with roundups, my ATM fees are reimbursed and now I have $50 free overdraft protection! Love this app more than PayPal or Venmo. So easy to send and receive $. No waiting for verification or anything. And almost everyone is on cash app. Super easy to look people up whether or not they are on your contact list",
+      "score": 5,
+      "thumbsUpCount": 752,
+      "reviewCreatedVersion": "211.1.1 (armeabi-v7a_release_flutter)",
+      "at": "2024-01-25 06:57:38",
+      "replyContent": null,
+      "repliedAt": "NaN",
+      "appVersion": "211.1.1 (armeabi-v7a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
+  },
+  "17084514406934502": {
+    "keywords": ["No digital receipts", "Checkout retail needs update"],
+    "first_order_labels": { "label_list": [] },
+    "second_order_labels": {
+      "label_list": ["other issues"],
+      "label_to_keylist": {
+        "other issues": ["No digital receipts", "Checkout retail needs update"]
+      }
+    },
+    "tagging_metadata": {
+      "sentiment": "positive",
+      "priority": "Low",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "3c298424-7f76-4968-8c85-a534974b48dc",
+      "userName": "Duane Soul (Soul G03)",
+      "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjXhHYOzaiJr7WonveQcR7_gAynNdYUorNh5DZ9o2H8gH4l-",
+      "content": "I've been using it for a while. Really convenient not needing to dig for my wallet everytime. My only wish is that there was some way to get digital receipts when you pay, and they appear in the wallet/pay app. Pretty sure the checkout retail needs to update in order to achieve this, but you'd think saving paper receipts would be good motivation. Still... It's a great app.",
+      "score": 5,
+      "thumbsUpCount": 718,
+      "reviewCreatedVersion": "205.1.5 (arm64-v8a_release_flutter)",
+      "at": "2023-12-29 16:47:29",
+      "replyContent": null,
+      "repliedAt": "NaN",
+      "appVersion": "205.1.5 (arm64-v8a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
+  },
+  "17084514406934560": {
+    "keywords": [
+      "No favorite or bookmark feature",
+      "No filter option in transaction history"
+    ],
+    "first_order_labels": {
+      "label_list": ["Issues related to managing bank accounts"]
+    },
+    "second_order_labels": {
+      "label_list": [
+        "other issues",
+        "Issues related to Check bank account balance"
+      ],
+      "label_to_keylist": {
+        "other issues": ["No favorite or bookmark feature"],
+        "Issues related to Check bank account balance": [
+          "No filter option in transaction history"
+        ]
+      }
+    },
+    "tagging_metadata": {
+      "sentiment": "neutral",
+      "priority": "Moderate",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "57e5d9ec-a817-4e5f-b9f0-79bbf5baf275",
+      "userName": "Bhupendra Chouhan",
+      "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjV-7_AeVYJf_SlZ2w_WvhIW12o3VXd42qW9lY6qIIUo82A",
+      "content": "Application is good. i have 2 suggestion. 1) Allow favorite or bookmark feature, so user doesnt need to serach unknown, unsaved contacts. 2) Transaction history should have filter option. IMPORTANT FEATURE MISSING ON GAPY Payment favourite feature is not available? I do some recurring payment monthly, it's very difficult to find those numbers. It would be great if we can give favourite feature to see all your important contact or payment receiver at one place.",
+      "score": 4,
+      "thumbsUpCount": 25,
+      "reviewCreatedVersion": "214.1.4 (arm64-v8a_release_flutter)",
+      "at": "2024-02-15 03:53:56",
+      "replyContent": null,
+      "repliedAt": "NaN",
+      "appVersion": "214.1.4 (arm64-v8a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
+  },
+  "17084514406934614": {
+    "keywords": [
+      "irrelevant third-party ad offers",
+      "pushing valuable cashbacks and rewards into the shadows",
+      "needs a focus on user value over flashy extras"
+    ],
+    "first_order_labels": { "label_list": [] },
+    "second_order_labels": {
+      "label_list": ["other issues"],
+      "label_to_keylist": {
+        "other issues": [
+          "irrelevant third-party ad offers",
+          "pushing valuable cashbacks and rewards into the shadows",
+          "needs a focus on user value over flashy extras"
+        ]
+      }
+    },
+    "tagging_metadata": {
+      "sentiment": "positive",
+      "priority": "Moderate",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "d2bda4d4-04d7-4488-a5ad-58722d4f5cac",
+      "userName": "Leo",
+      "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjWKVQnTw_bRmksoUr5QyA_iiN9YjAXoDLn03MX5RreJfHjT",
+      "content": "As a Prominent Google pay user, initially thrilled with its rewards and simplicity. App UI remains excellent, but recent times see it swamped with irrelevant third-party ad offers, pushing valuable cashbacks and rewards into the shadows. Payment system, thankfully, stays fast and reliable. Needs a focus on user value over flashy extras to retain loyal fans.",
+      "score": 4,
+      "thumbsUpCount": 528,
+      "reviewCreatedVersion": "212.1.1 (arm64-v8a_release_flutter)",
+      "at": "2024-02-04 19:48:46",
+      "replyContent": null,
+      "repliedAt": "NaN",
+      "appVersion": "212.1.1 (arm64-v8a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
+  },
+  "17084514406934674": {
+    "keywords": [
+      "No quick way to get back to next payment scan after completing one",
+      "Hassle to start a new transaction"
+    ],
+    "first_order_labels": {
+      "label_list": [
+        "Issues realted to Issues related to Transaction failure",
+        "Issues related to Digital Payments"
+      ]
+    },
+    "second_order_labels": {
+      "label_list": [
+        "Issues related to QR code payments",
+        "Issues realted to Issues related to Transaction failure"
+      ],
+      "label_to_keylist": {
+        "Issues related to QR code payments": [
+          "No quick way to get back to next payment scan after completing one"
+        ],
+        "Issues realted to Issues related to Transaction failure": [
+          "Hassle to start a new transaction"
+        ]
+      }
+    },
+    "tagging_metadata": {
+      "sentiment": "positive",
+      "priority": "Low",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "a8c867ab-e06b-4bba-98dc-30d0a9df990b",
+      "userName": "Sudheer Krishna",
+      "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjWu3dmcTo270nkEhlkaz9GzccBWAbFqX3Qfs2GNnF0goAA",
+      "content": "I am big time user of gpay app. I am happy about the app for what it offers. However the biggest gripe is that there is no quick way to get back to next payment scan after completing one. After completing a payment, I have to hit 'Done' then it takes to me to the page with transaction history for that merchant account. In order to start a new transaction I have to go back and then select the option, it is a hassle like this. Please provide quick way to get back to make a next payment.",
+      "score": 3,
+      "thumbsUpCount": 37,
+      "reviewCreatedVersion": "213.1.3 (arm64-v8a_release_flutter)",
+      "at": "2024-02-08 14:58:46",
+      "replyContent": null,
+      "repliedAt": "NaN",
+      "appVersion": "213.1.3 (arm64-v8a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
+  },
+  "17084514406934736": {
+    "keywords": [
+      "No proper rewards",
+      "Disappointment for customers",
+      "Lack of good coupons",
+      "Bugs in the app"
+    ],
+    "first_order_labels": {
+      "label_list": [
+        "Issues realted to Issues related to Security and Privacy Issues",
+        "Issues related to Refer friends and earn rewards",
+        "Issues realted to Issues related to Transaction failure"
+      ]
+    },
+    "second_order_labels": {
+      "label_list": [
+        "other issues",
+        "Issues realted to Issues related to Security and Privacy Issues",
+        "Issues related to Refer friends and earn rewards",
+        "Issues realted to Issues related to Transaction failure"
+      ],
+      "label_to_keylist": {
+        "Issues related to Refer friends and earn rewards": [
+          "No proper rewards"
+        ],
+        "Issues realted to Issues related to Transaction failure": [
+          "Disappointment for customers"
+        ],
+        "other issues": ["Lack of good coupons"],
+        "Issues realted to Issues related to Security and Privacy Issues": [
+          "Bugs in the app"
+        ]
+      }
+    },
+    "tagging_metadata": {
+      "sentiment": "negative",
+      "priority": "Low",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "aa942908-e8e4-42a7-8db5-d959b6cadff6",
+      "userName": "Love Eman",
+      "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjW3xL_sEq2uTnLqin1pq2vj6ffW7jQnOtzD6vEcTV-EHw",
+      "content": "Google pay was so good at first but now there aren't even rewards given properly like it shows better luck next time i mean it's such a disappointment for the customers, i would really want good coupons for customers more likely related to zepto, swiggy, Zomato, uber, ola, rapido and so on and pls fix the bugs!!",
+      "score": 2,
+      "thumbsUpCount": 7,
+      "reviewCreatedVersion": "214.1.4 (arm64-v8a_release_flutter)",
+      "at": "2024-02-15 06:06:48",
+      "replyContent": null,
+      "repliedAt": "NaN",
+      "appVersion": "214.1.4 (arm64-v8a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
+  },
+  "17084514406934814": {
+    "keywords": [
+      "Poor experience",
+      "Transaction not received",
+      "Transaction failed",
+      "Issues with transaction",
+      "No response",
+      "Careful while paying"
+    ],
+    "first_order_labels": {
+      "label_list": [
+        "Issues realted to Issues related to Customer Support",
+        "Issues realted to Issues related to Transaction failure"
+      ]
+    },
+    "second_order_labels": {
+      "label_list": [
+        "other issues",
+        "Issues realted to Issues related to Customer Support",
+        "Issues realted to Issues related to Transaction failure"
+      ],
+      "label_to_keylist": {
+        "Issues realted to Issues related to Transaction failure": [
+          "Poor experience",
+          "Transaction not received",
+          "Transaction failed",
+          "Issues with transaction"
+        ],
+        "Issues realted to Issues related to Customer Support": ["No response"],
+        "other issues": ["Careful while paying"]
+      }
+    },
+    "tagging_metadata": {
+      "sentiment": "negative",
+      "priority": "High",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "4f6969fc-123e-4c60-a83c-bd046920caf6",
+      "userName": "Glenwill P C",
+      "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjXKeUDdBH6XR7dtyBwMt-4RznENYxUDEzLc-vYuovc6Ux8",
+      "content": "Poor experience from the app side . I have transferred an amount on last Friday and it didn't received on the receiver side or the money didn't get back on my account it's been 6 days it happen and still yet not response... One day after the transaction the gpay shows that the transaction was failed. I have been facing many issue about this transaction.. Who ever seeing this please careful guys while you paying big amount",
+      "score": 1,
+      "thumbsUpCount": 9,
+      "reviewCreatedVersion": "211.1.1 (armeabi-v7a_release_flutter)",
+      "at": "2024-02-14 09:08:20",
+      "replyContent": null,
+      "repliedAt": "NaN",
+      "appVersion": "211.1.1 (armeabi-v7a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
+  },
+  "17084514406934878": {
+    "keywords": [
+      "Deducting money for sms",
+      "Automatically added SBI bank account",
+      "Growing really stupid",
+      "Multiple accounts linked with phone number"
+    ],
+    "first_order_labels": {
+      "label_list": ["Issues related to managing bank accounts"]
+    },
+    "second_order_labels": {
+      "label_list": [
+        "other issues",
+        "Issues related to Link bank account with registered mobile number"
+      ],
+      "label_to_keylist": {
+        "other issues": ["Deducting money for sms", "Growing really stupid"],
+        "Issues related to Link bank account with registered mobile number": [
+          "Automatically added SBI bank account",
+          "Multiple accounts linked with phone number"
+        ]
+      }
+    },
+    "tagging_metadata": {
+      "sentiment": "negative",
+      "priority": "Moderate",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "98035c3d-6e78-45f1-8d63-3dd4bed5d663",
+      "userName": "Krutagna Sharma",
+      "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocJDUYoz_muMW5BSZLeQqIXqAmwyRbsdUkoz79d_36Pj=mo",
+      "content": "They kept deducting money for sms, even though I have not entered a new card. I just went inside the option. Didn't expect this cheap behaviour from Google to earn money. Also, I only entered by phone number and they automatically added SBI bank account, although I intended to add another bank account & deducted for sms as well. Sorry to say, but It's growing really stupid. I can have multiple accounts, linked with my phone number.",
+      "score": 1,
+      "thumbsUpCount": 41,
+      "reviewCreatedVersion": "212.1.1 (arm64-v8a_release_flutter)",
+      "at": "2024-02-02 09:15:49",
+      "replyContent": "Regret the inconvenience, Krutagna. We suggest you contact our specialist team for assistance on this: https://goo.gle/2PQQFuc. Our team would be happy to help.",
+      "repliedAt": "2024-02-02 09:38:51",
+      "appVersion": "212.1.1 (arm64-v8a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
+  },
+  "17084514406934950": {
+    "keywords": [
+      "sensitivity of app keyboard is very low",
+      "error happens while inputting pin number",
+      "transaction fails",
+      "keyboard size is too big",
+      "keyboard does not fit within mobile screen size"
+    ],
+    "first_order_labels": {
+      "label_list": [
+        "Issues related to Set UPI PIN for security",
+        "Issues realted to Issues related to Transaction failure"
+      ]
+    },
+    "second_order_labels": {
+      "label_list": [
+        "other issues",
+        "Issues related to Set UPI PIN for security",
+        "Issues realted to Issues related to Transaction failure"
+      ],
+      "label_to_keylist": {
+        "other issues": [
+          "sensitivity of app keyboard is very low",
+          "keyboard size is too big",
+          "keyboard does not fit within mobile screen size"
+        ],
+        "Issues related to Set UPI PIN for security": [
+          "error happens while inputting pin number"
+        ],
+        "Issues realted to Issues related to Transaction failure": [
+          "transaction fails"
+        ]
+      }
+    },
+    "tagging_metadata": {
+      "sentiment": "neutral",
+      "priority": "Low",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "d32683fe-04d7-4319-bc74-3a3c62b8219d",
+      "userName": "Suresh",
+      "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocIWbO8kJuUK5EMvburEnteWbK_sHOelDgmdjnV4S9KV=mo",
+      "content": "The app is very much user friendly . But recently I installed on my new Samsung A05 model and I found the sensitivity of app key board is very low . Due to this error happens while inputting pin number and transaction fails . Also key board size is so big that it is not fitting within mobile screen size . I reinstalled app 4 to 5 times but no improvement . Otherwise it functioning very good .",
+      "score": 4,
+      "thumbsUpCount": 48,
+      "reviewCreatedVersion": "212.1.1 (arm64-v8a_release_flutter)",
+      "at": "2024-02-04 13:43:13",
+      "replyContent": null,
+      "repliedAt": "NaN",
+      "appVersion": "212.1.1 (arm64-v8a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
+  },
+  "17084514406935084": {
+    "keywords": [
+      "payment stuck",
+      "delayed status",
+      "money debited but payment stuck"
+    ],
+    "first_order_labels": {
+      "label_list": [
+        "Issues realted to Issues related to  debit/credit cards compatibility"
+      ]
+    },
+    "second_order_labels": {
+      "label_list": [
+        "Issues realted to Issues related to  debit/credit cards compatibility",
+        "other issues"
+      ],
+      "label_to_keylist": {
+        "other issues": ["payment stuck", "delayed status"],
+        "Issues realted to Issues related to  debit/credit cards compatibility": [
+          "money debited but payment stuck"
+        ]
+      }
+    },
+    "tagging_metadata": {
+      "sentiment": "negative",
+      "priority": "Moderate",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "920a392d-1628-40ca-936a-a4cb5d0e8ef6",
+      "userName": "DHARMA REDDY KOVVURI",
+      "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocKkbwtfrGMhex22-K04se5rpoQsdZhOPEVBDDUN_ni9AA=mo",
+      "content": "I don't see payment stuck in any other UPI app's other than Google pay. When we make a payment for a service they won't wait for hours and days to get the status of payment. I'll try to avoid Google pay in Future. It need not be success status all the time. Atleast a failure status is much better than money getting debited from bank account and payment stuck in processing",
+      "score": 1,
+      "thumbsUpCount": 42,
+      "reviewCreatedVersion": "211.1.1 (arm64-v8a_release_flutter)",
+      "at": "2024-02-01 15:22:55",
+      "replyContent": null,
+      "repliedAt": "NaN",
+      "appVersion": "211.1.1 (arm64-v8a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
+  },
+  "17084514406935148": {
+    "keywords": [
+      "Verification process is slow",
+      "Internet speed slows down during verification",
+      "Uninstalling the app",
+      "Recommend using other UPI apps"
+    ],
+    "first_order_labels": {
+      "label_list": [
+        "Issues related to Set UPI PIN for security",
+        "Issues related to Digital Payments"
+      ]
+    },
+    "second_order_labels": {
+      "label_list": [
+        "Issues related to Simple and secure payments app",
+        "other issues",
+        "Issues related to UPI ID for UPI payments",
+        "Issues related to Set UPI PIN for security"
+      ],
+      "label_to_keylist": {
+        "Issues related to UPI ID for UPI payments": [
+          "Verification process is slow"
+        ],
+        "Issues related to Simple and secure payments app": [
+          "Internet speed slows down during verification"
+        ],
+        "other issues": ["Uninstalling the app"],
+        "Issues related to Set UPI PIN for security": [
+          "Recommend using other UPI apps"
+        ]
+      }
+    },
+    "tagging_metadata": {
+      "sentiment": "negative",
+      "priority": "High",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "51b5ea28-5336-4a51-96c5-7b2c5fb1a868",
+      "userName": "SK SALEHUDDIN",
+      "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocKwrdbH3wqorYp8sNYI3TFeh0ZJGZX4dCAL5jS0US1U=mo",
+      "content": "Very bad app. Once you remove your sim card from your phone the app will need a verification when you re-enter your sim. And this verification process is too much slow. I have a full week and so more but my verification is yet pending. Just after clicking the option \"Verification by sms\", your internet speed will gradually fall and never your verification will be done. I have just uninstalled thisapp.I advice everyone not to install it. Instead of it, you may use other UPI apps.",
+      "score": 1,
+      "thumbsUpCount": 537,
+      "reviewCreatedVersion": "211.1.1 (armeabi-v7a_release_flutter)",
+      "at": "2024-01-26 13:05:53",
+      "replyContent": null,
+      "repliedAt": "NaN",
+      "appVersion": "211.1.1 (armeabi-v7a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
+  },
+  "17084514406935198": {
+    "keywords": [
+      "Not working since yesterday",
+      "Oops! Something went wrong",
+      "Have to try again multiple times",
+      "Bank requested to reset UPI pin",
+      "Took a long time to fix the issue"
+    ],
+    "first_order_labels": {
+      "label_list": [
+        "Issues realted to Issues related to Customer Support",
+        "Issues related to Set UPI PIN for security"
+      ]
+    },
+    "second_order_labels": {
+      "label_list": [
+        "Issues realted to Issues related to Customer Support",
+        "other issues",
+        "Issues related to Set UPI PIN for security"
+      ],
+      "label_to_keylist": {
+        "other issues": [
+          "Not working since yesterday",
+          "Oops! Something went wrong",
+          "Have to try again multiple times"
+        ],
+        "Issues related to Set UPI PIN for security": [
+          "Bank requested to reset UPI pin"
+        ],
+        "Issues realted to Issues related to Customer Support": [
+          "Took a long time to fix the issue"
+        ]
+      }
+    },
+    "tagging_metadata": {
+      "sentiment": "negative",
+      "priority": "High",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "7cf67a45-a37d-44a2-ab2a-5305e08f98df",
+      "userName": "Areeha Noor",
+      "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjVv5KyU72mSkmL21aTtvqqOw-zRNkZBoARY_6uUNVLZdQ",
+      "content": "Not working since yesterday. I don't do online payments usually anyway. When I need to, I expect it to work smoothly. Bank has somehow requested to reset UPI pin it shows, but when I try to do so, it shows \"Oops! Something went wrong. Try again. \" How many times am I supposed to TrY AgAiN??? I don't have all day. Please fix the issue. I'm so sick of it. Edit: Thank you for fixing the issue immediately. Finally, I successfully made the payment after resetting UPI pin. Thanks again.",
+      "score": 4,
+      "thumbsUpCount": 62,
+      "reviewCreatedVersion": "211.1.1 (arm64-v8a_release_flutter)",
+      "at": "2024-01-30 03:07:49",
+      "replyContent": "Regret the inconvenience, Areeha. Please ensure that you're using the latest version of the app. For more info, check out our Help Center: https://goo.gle/3aQkQu3. For further assistance, reach out to our support team. Here's how: https://goo.gle/2PQQFuc.",
+      "repliedAt": "2023-12-27 15:59:49",
+      "appVersion": "211.1.1 (arm64-v8a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
+  },
+  "17084514406935260": {
+    "keywords": [
+      "Payment failure without prior notification",
+      "Lack of post-payment tagging feature"
+    ],
+    "first_order_labels": {
+      "label_list": [
+        "Issues realted to Issues related to Transaction failure",
+        "Issues related to Digital Payments"
+      ]
+    },
+    "second_order_labels": {
+      "label_list": [
+        "Issues related to Convenient bill payments",
+        "Issues realted to Issues related to Transaction failure"
+      ],
+      "label_to_keylist": {
+        "Issues realted to Issues related to Transaction failure": [
+          "Payment failure without prior notification"
+        ],
+        "Issues related to Convenient bill payments": [
+          "Lack of post-payment tagging feature"
+        ]
+      }
+    },
+    "tagging_metadata": {
+      "sentiment": "neutral",
+      "priority": "Moderate",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "d2893198-efc8-470b-8b65-984361b1deb3",
+      "userName": "Mohammed Ghouse J",
+      "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjUU3LTz9qWxIYIJHr89ZK0tpYp62nbici58uZgeiNuvktk",
+      "content": "GPay is my goto money transfer app, as it's UI and all the updates fulfill everything the users need. But, I've only 2 drawbacks regarding Gpay. 1. There's a lot of time the payment gets failed. But, it shows bank server issues. It would be better if this message can be shown before the transaction. 2. There should be tag available to the payment done (i.e. after the payment) Like Paytm. It only allow us to tag before the payment. If we forgot to mention the tag then it's over. Need solution.",
+      "score": 3,
+      "thumbsUpCount": 11,
+      "reviewCreatedVersion": "213.1.8 (arm64-v8a_release_flutter)",
+      "at": "2024-02-13 12:18:14",
+      "replyContent": null,
+      "repliedAt": "NaN",
+      "appVersion": "213.1.8 (arm64-v8a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
+  },
+  "17084514406935324": {
+    "keywords": [
+      "Pathetic customer support",
+      "Payment requests declined without valid reason",
+      "Transaction limited as new account",
+      "No proper way to communicate with officials"
+    ],
+    "first_order_labels": {
+      "label_list": [
+        "Issues realted to Issues related to Bug Reports",
+        "Issues realted to Issues related to Customer Support",
+        "Issues realted to Issues related to Transaction failure"
+      ]
+    },
+    "second_order_labels": {
+      "label_list": [
+        "Issues realted to Issues related to Bug Reports",
+        "other issues",
+        "Issues realted to Issues related to Customer Support",
+        "Issues realted to Issues related to Transaction failure"
+      ],
+      "label_to_keylist": {
+        "Issues realted to Issues related to Customer Support": [
+          "Pathetic customer support"
+        ],
+        "Issues realted to Issues related to Bug Reports": [
+          "Payment requests declined without valid reason"
+        ],
+        "Issues realted to Issues related to Transaction failure": [
+          "Transaction limited as new account"
+        ],
+        "other issues": ["No proper way to communicate with officials"]
+      }
+    },
+    "tagging_metadata": {
+      "sentiment": "negative",
+      "priority": "High",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "f775703a-090b-4ddd-af90-584c8a058397",
+      "userName": "SHYAM RAMESH",
+      "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocK7s8t6z_CPDyEkAmvrFZ7MPV8_RPKHuKAGT6twoUYv=mo",
+      "content": "Pathetic customer support I am trying to do payments since morning and all my payment requests are declined without any valid reason. The pop up says that my transaction is limited as it is a new account it seems. Its not at all a new account. Been using the same account since years. After all, there is no proper way I can communicate these to officials. Meanwhile the same account linked to Gpay is functioning well with bank's app.",
+      "score": 1,
+      "thumbsUpCount": 32,
+      "reviewCreatedVersion": "211.1.1 (arm64-v8a_release_flutter)",
+      "at": "2024-02-02 14:22:16",
+      "replyContent": null,
+      "repliedAt": "NaN",
+      "appVersion": "211.1.1 (arm64-v8a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
+  },
+  "17084514406935394": {
+    "keywords": ["unwanted rewards", "third-party tie-ups"],
+    "first_order_labels": { "label_list": [] },
+    "second_order_labels": {
+      "label_list": ["other issues"],
+      "label_to_keylist": {
+        "other issues": ["unwanted rewards", "third-party tie-ups"]
+      }
+    },
+    "tagging_metadata": {
+      "sentiment": "positive",
+      "priority": "Low",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "83b02b0e-306c-45b1-9f61-169c9b32ea04",
+      "userName": "Shruthi",
+      "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocJuXvcjUc61Sil3FQaDkiU5honk4zJQWLyGt0C461M=mo",
+      "content": "This is my go-to app for all online payments, and it works flawlessly most of the time. My only gripe is with the rewards offered, as most of them are third-party tie-ups, such as cosmetics and brands, that are unwanted and always ignored by Google Pay users. Please go back to offering simple cashbacks instead, like before.",
+      "score": 4,
+      "thumbsUpCount": 42,
+      "reviewCreatedVersion": "211.1.1 (arm64-v8a_release_flutter)",
+      "at": "2024-01-30 09:55:53",
+      "replyContent": null,
+      "repliedAt": "NaN",
+      "appVersion": "211.1.1 (arm64-v8a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
+  },
+  "17084514406935630": {
+    "keywords": ["server error", "server busy"],
+    "first_order_labels": { "label_list": [] },
+    "second_order_labels": {
+      "label_list": ["other issues"],
+      "label_to_keylist": { "other issues": ["server error", "server busy"] }
+    },
+    "tagging_metadata": {
+      "sentiment": "negative",
+      "priority": "High",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "b606d493-77cc-41b0-8fee-b9e169437ff9",
+      "userName": "Altamas Alam Ahmed",
+      "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjVBycU_CW_GCIfW6OX1UKVQP-H9OrClAal2tp9Bq7zK-UY",
+      "content": "Used to be my one and only app for online payments. But for sometimes now its always shows server error whenever i tried to make a payment, it's absolutely disgusting. So i shifted to PhonePay. Few mins i tried one more to time to send money from gpay but it showed server busy then i tried the same on phonepay and it smoothly transfered the money. I hope Google will fix it ASAP, as they are already losing trust.",
+      "score": 1,
+      "thumbsUpCount": 38,
+      "reviewCreatedVersion": "211.1.1 (arm64-v8a_release_flutter)",
+      "at": "2024-01-28 07:56:57",
+      "replyContent": null,
+      "repliedAt": "NaN",
+      "appVersion": "211.1.1 (arm64-v8a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
+  },
+  "17084514406935692": {
+    "keywords": [
+      "update error",
+      "transactions list not showing",
+      "uninstall and reinstalation not working",
+      "need to update features"
+    ],
+    "first_order_labels": {
+      "label_list": ["Issues related to Digital Payments"]
+    },
+    "second_order_labels": {
+      "label_list": [
+        "Issues related to Simple and secure payments app",
+        "other issues"
+      ],
+      "label_to_keylist": {
+        "other issues": [
+          "update error",
+          "uninstall and reinstalation not working",
+          "need to update features"
+        ],
+        "Issues related to Simple and secure payments app": [
+          "transactions list not showing"
+        ]
+      }
+    },
+    "tagging_metadata": {
+      "sentiment": "neutral",
+      "priority": "Low",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "aa2b3c7c-979e-4940-8470-c0c7d41fc481",
+      "userName": "Nandeesh Kumar K N",
+      "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjVGyL6LkIZqLeSBATMnR2PcJcc2hCCNrP9Z9I4ls8CGRbQ",
+      "content": "Starting onwards smoothly working then when I update the app so much of error. From last one I could not showing my transactions list, I tried the uninstall and reinstalation but no use same error getting. Need to update the some features in your app.",
+      "score": 1,
+      "thumbsUpCount": 36,
+      "reviewCreatedVersion": "211.1.1 (arm64-v8a_release_flutter)",
+      "at": "2024-01-26 23:46:59",
+      "replyContent": null,
+      "repliedAt": "NaN",
+      "appVersion": "211.1.1 (arm64-v8a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
+  },
+  "17084514406935752": {
+    "keywords": [
+      "User interface not polished",
+      "Debit and credit cards not on main page",
+      "Bills and payment options not easily accessible"
+    ],
+    "first_order_labels": {
+      "label_list": [
+        "Issues realted to Issues related to Bug Reports",
+        "Issues realted to Issues related to  debit/credit cards compatibility",
+        "Issues related to Digital Payments"
+      ]
+    },
+    "second_order_labels": {
+      "label_list": [
+        "Issues realted to Issues related to Bug Reports",
+        "Issues realted to Issues related to  debit/credit cards compatibility",
+        "Issues related to Convenient bill payments"
+      ],
+      "label_to_keylist": {
+        "Issues realted to Issues related to Bug Reports": [
+          "User interface not polished"
+        ],
+        "Issues realted to Issues related to  debit/credit cards compatibility": [
+          "Debit and credit cards not on main page"
+        ],
+        "Issues related to Convenient bill payments": [
+          "Bills and payment options not easily accessible"
+        ]
+      }
+    },
+    "tagging_metadata": {
+      "sentiment": "negative",
+      "priority": "Low",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "60bc297a-f589-47a3-aa30-61295ed575c6",
+      "userName": "Sumit Das",
+      "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjU6XpaZZ-gLOqJkB1iTj-jNuNBf3ovadscInjHH15HPlsk",
+      "content": "The user interface is not as polished as the United States version. The debit and credit cards should be on the main page and the people and business should go on the side menu it's really annoying to go all the way down for the bills and payment options those should be given a better place in the main page. Hoping for a revamp.",
+      "score": 3,
+      "thumbsUpCount": 20,
+      "reviewCreatedVersion": "213.1.3 (arm64-v8a_release_flutter)",
+      "at": "2024-02-07 16:53:02",
+      "replyContent": null,
+      "repliedAt": "NaN",
+      "appVersion": "213.1.3 (arm64-v8a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
+  },
+  "17084514406935816": {
+    "keywords": [
+      "Not user-friendly",
+      "Limited features",
+      "Slow performance",
+      "Security concerns",
+      "Complicated setup process"
+    ],
+    "first_order_labels": {
+      "label_list": [
+        "Issues realted to Issues related to Bug Reports",
+        "Issues related to Set UPI PIN for security",
+        "Issues realted to Issues related to Security and Privacy Issues",
+        "Issues related to Find prepaid recharge plans"
+      ]
+    },
+    "second_order_labels": {
+      "label_list": [
+        "Issues realted to Issues related to Bug Reports",
+        "Issues related to Set UPI PIN for security",
+        "Issues realted to Issues related to Security and Privacy Issues",
+        "Issues related to Find prepaid recharge plans"
+      ],
+      "label_to_keylist": {
+        "Issues realted to Issues related to Bug Reports": [
+          "Not user-friendly",
+          "Slow performance"
+        ],
+        "Issues related to Find prepaid recharge plans": ["Limited features"],
+        "Issues realted to Issues related to Security and Privacy Issues": [
+          "Security concerns"
+        ],
+        "Issues related to Set UPI PIN for security": [
+          "Complicated setup process"
+        ]
+      }
+    },
+    "tagging_metadata": {
+      "sentiment": "neutral",
+      "priority": "Low",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "cce9a57a-5175-44ae-8f33-29ac1eb6d10b",
+      "userName": "Bandi Naveen Gowd",
+      "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjXItULWZl41JVkFyG5OOnbl8W9dfnm78UsHqu_oe_ovwg",
+      "content": "Google Pay is much more than a digital wallet; it\u2019s an innovative payment platform that includes all kinds of useful features. That said, its main purpose is to make payments quicker, safer, and easier for both buyers and sellers. It\u2019s completely free, highly secure, and available to anyone with a smartphone \u2013 all they have to do is use the Google Pay app. Google Pay comes preinstalled on most Android phones, and is available in the App Store for iOS devices.  After setting up the app, the use",
+      "score": 5,
+      "thumbsUpCount": 24,
+      "reviewCreatedVersion": "211.1.1 (armeabi-v7a_release_flutter)",
+      "at": "2024-01-28 19:03:00",
+      "replyContent": null,
+      "repliedAt": "NaN",
+      "appVersion": "211.1.1 (armeabi-v7a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
+  },
+  "17084514431112256": {
+    "keywords": [
+      "tied to system screen-lock",
+      "lack of app unlock feature",
+      "inability to toggle between screen-lock and app unlock"
+    ],
+    "first_order_labels": {
+      "label_list": [
+        "Issues related to Multiple layers of security from bank and Google",
+        "Issues related to Set UPI PIN for security"
+      ]
+    },
+    "second_order_labels": {
+      "label_list": [
+        "Issues related to Multiple layers of security from bank and Google",
+        "other issues",
+        "Issues related to Set UPI PIN for security"
+      ],
+      "label_to_keylist": {
+        "other issues": ["tied to system screen-lock"],
+        "Issues related to Set UPI PIN for security": [
+          "lack of app unlock feature"
+        ],
+        "Issues related to Multiple layers of security from bank and Google": [
+          "inability to toggle between screen-lock and app unlock"
+        ]
+      }
+    },
+    "tagging_metadata": {
+      "sentiment": "negative",
+      "priority": "Moderate",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "972945ff-f4a6-4874-8f1a-896322d5b556",
+      "userName": "Jason Jacobson",
+      "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjWaJkF-0jkYGf50QieSry14S0k7b2L-5b1m2eaCzAKovU4",
+      "content": "I find it absolutely absurd that this app is somehow tied to the system screen-lock and not using an app unlock feature like any banking app or venmo. At a minimum you should at least be able to choose or have a setting that lets you toggle between one and the other. The problem is that when someone has an idea, it's not always a good idea and your peers need to speak up in a respectful way.",
+      "score": 3,
+      "thumbsUpCount": 232,
+      "reviewCreatedVersion": "210.1.2 (arm64-v8a_release_flutter)",
+      "at": "2024-01-21 15:45:10",
+      "replyContent": null,
+      "repliedAt": "NaN",
+      "appVersion": "210.1.2 (arm64-v8a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
+  },
+  "17084514431112484": {
+    "keywords": ["debit card payments", "money deducted from multiple sources"],
+    "first_order_labels": {
+      "label_list": [
+        "Issues realted to Issues related to  debit/credit cards compatibility"
+      ]
+    },
+    "second_order_labels": {
+      "label_list": [
+        "Issues realted to Issues related to  debit/credit cards compatibility",
+        "other issues"
+      ],
+      "label_to_keylist": {
+        "Issues realted to Issues related to  debit/credit cards compatibility": [
+          "debit card payments"
+        ],
+        "other issues": ["money deducted from multiple sources"]
+      }
+    },
+    "tagging_metadata": {
+      "sentiment": "neutral",
+      "priority": "Low",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "5ac34c64-11d7-4bbd-b951-338dfba8e9f7",
+      "userName": "Lisa M",
+      "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjWTxu1wdEqTAbx9VOQOUePsCguQOz2xWHYMOLC2G35CGRE",
+      "content": "Very efficient for paying on the go if you are using a NFC equipped phone. I use it on personal & business lines, most of which are not NFC enabled, but it eases check out verification times with every site you visit. Now one thing to beware and be very careful of... Seems no matter how old the account or last credit card used....once Google links your debt, it will take the money from every place it can, even if years have passed. So make your choices wisely and maybe pay your bills. \ud83d\ude19",
+      "score": 3,
+      "thumbsUpCount": 327,
+      "reviewCreatedVersion": "205.1.2 (arm64-v8a_release_flutter)",
+      "at": "2023-12-12 04:05:28",
+      "replyContent": null,
+      "repliedAt": "NaN",
+      "appVersion": "205.1.2 (arm64-v8a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
+  },
+  "17084514431112564": {
+    "keywords": [
+      "occasional glitches and transaction delays",
+      "customer support issues"
+    ],
+    "first_order_labels": {
+      "label_list": [
+        "Issues realted to Issues related to Customer Support",
+        "Issues realted to Issues related to Transaction failure"
+      ]
+    },
+    "second_order_labels": {
+      "label_list": [
+        "Issues realted to Issues related to Customer Support",
+        "Issues realted to Issues related to Transaction failure"
+      ],
+      "label_to_keylist": {
+        "Issues realted to Issues related to Transaction failure": [
+          "occasional glitches and transaction delays"
+        ],
+        "Issues realted to Issues related to Customer Support": [
+          "customer support issues"
+        ]
+      }
+    },
+    "tagging_metadata": {
+      "sentiment": "neutral",
+      "priority": "Moderate",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "ec6a2289-a7ea-4f23-9ec6-b9e963c6c285",
+      "userName": "Olivier Bidault",
+      "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocIhLOroifWoffbi0awd-o5KbHDCHNkR1C2vk9PaPcs=mo",
+      "content": "Google Pay provides a convenient way to handle transactions and manage payments. Its integration with various apps and websites simplifies online shopping. While the interface is generally user-friendly, occasional glitches and transaction delays have been experienced. The security features are commendable, yet there's room for improvement in resolving customer support issues promptly. Overall, Google Pay is a handy tool for digital payments, but a bit more attention to reliability and customer",
+      "score": 4,
+      "thumbsUpCount": 139,
+      "reviewCreatedVersion": "205.1.6 (arm64-v8a_release_flutter)",
+      "at": "2024-01-16 19:16:38",
+      "replyContent": null,
+      "repliedAt": "NaN",
+      "appVersion": "205.1.6 (arm64-v8a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
+  },
+  "17084514431112640": {
+    "keywords": ["App not working", "Black screen issue"],
+    "first_order_labels": {
+      "label_list": ["Issues realted to Issues related to Bug Reports"]
+    },
+    "second_order_labels": {
+      "label_list": [
+        "Issues realted to Issues related to Bug Reports",
+        "other issues"
+      ],
+      "label_to_keylist": {
+        "Issues realted to Issues related to Bug Reports": ["App not working"],
+        "other issues": ["Black screen issue"]
+      }
+    },
+    "tagging_metadata": {
+      "sentiment": "negative",
+      "priority": "High",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "07feae62-37a5-4808-b8ed-71ada120d637",
+      "userName": "Mrinal Kaushik",
+      "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjWBw6AQWEhxnxW9YkFbU03JJdJCL-iYrfkoxwUpW-iRFJA",
+      "content": "The google pay app is not working  since yesterday for some reason, I don't know. Whenever I opened it, it required me to draw phone security pattern and then just black blank screen.  After tyring multiple times I cleared data and uninstalled the app to reinstall it. Still it didn't open. That intial logo displays then the same black screen continues. I reinstalled it 3-4 times still it is not opening. Kindly check what is happening and let me know as soon as possible.",
+      "score": 2,
+      "thumbsUpCount": 1462,
+      "reviewCreatedVersion": "205.1.2 (arm64-v8a_release_flutter)",
+      "at": "2023-12-12 21:02:11",
+      "replyContent": "Regret the inconvenience, Mrinal. Please ensure that you're using the app with a stable internet connection. For more info, check out our Help Center: https://goo.gle/3aQkQu3. For further assistance you can reach out to our support team: https://goo.gle/2PQQFuc.",
+      "repliedAt": "2023-12-12 21:17:44",
+      "appVersion": "205.1.2 (arm64-v8a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
+  },
+  "17084514431112706": {
+    "keywords": [
+      "Unlink bank account",
+      "Registered sim not detected",
+      "Couldn't transfer money",
+      "Worst experience",
+      "Service issue"
+    ],
+    "first_order_labels": {
+      "label_list": [
+        "Issues related to Digital Payments",
+        "Issues related to managing bank accounts"
+      ]
+    },
+    "second_order_labels": {
+      "label_list": [
+        "other issues",
+        "Issues related to Send money via UPI transfers",
+        "Issues related to Link bank account with registered mobile number"
+      ],
+      "label_to_keylist": {
+        "Issues related to Link bank account with registered mobile number": [
+          "Unlink bank account"
+        ],
+        "other issues": [
+          "Registered sim not detected",
+          "Worst experience",
+          "Service issue"
+        ],
+        "Issues related to Send money via UPI transfers": [
+          "Couldn't transfer money"
+        ]
+      }
+    },
+    "tagging_metadata": {
+      "sentiment": "negative",
+      "priority": "Critical",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "3b616dd7-0955-45cd-9a68-ae50d902d0dd",
+      "userName": "Raaja",
+      "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocIotj7v0Dnqj5EQiOf6jtbqUq-cCw_2xG3j9CwOmzhI=mo",
+      "content": "The recent update made me unlink my bank account ,no matter what I do, the registered sim doesn't get detected for the particular bank . Try registering again using the registered mobile sim alone and even mobile banking is activated in my bank app, it even shows my balance whereas Gpay doesn't even show my live existing account . Worst experience ever couldn't transfer money for a week . ONE OF THE WORST EXPERIENCE AND SERVICE. Wish I could rate 0stars",
+      "score": 1,
+      "thumbsUpCount": 26,
+      "reviewCreatedVersion": "212.1.1 (arm64-v8a_release_flutter)",
+      "at": "2024-02-02 08:58:25",
+      "replyContent": "Sorry to hear that, Raaja. It can be frustrating when things don't go as expected. You can check out https://goo.gle/3iUGyXW. If you need more help, reach out to our specialist team on 1800-419-0157.",
+      "repliedAt": "2024-02-02 09:41:31",
+      "appVersion": "212.1.1 (arm64-v8a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
+  },
+  "17084514431112776": {
+    "keywords": [
+      "missing two-step verification",
+      "lack of OTP for bank account verification"
+    ],
+    "first_order_labels": {
+      "label_list": [
+        "Issues related to Multiple layers of security from bank and Google",
+        "Issues related to managing bank accounts"
+      ]
+    },
+    "second_order_labels": {
+      "label_list": [
+        "Issues related to Multiple layers of security from bank and Google",
+        "Issues related to Link bank account with registered mobile number"
+      ],
+      "label_to_keylist": {
+        "Issues related to Multiple layers of security from bank and Google": [
+          "missing two-step verification"
+        ],
+        "Issues related to Link bank account with registered mobile number": [
+          "lack of OTP for bank account verification"
+        ]
+      }
+    },
+    "tagging_metadata": {
+      "sentiment": "positive",
+      "priority": "Low",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "a2b880fe-b365-4f76-8981-5a7d130ec117",
+      "userName": "ankit gadhiya",
+      "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjVVkNYSN6ZR_xcB_IjWD-v55TXkpT-Gi23sNlk0wo9OyWez",
+      "content": "The application is a nice and performing very well but there is some feature is missing in security section like while adding new account there must be a two step verification like OTP from mobile device as well as from email also to add bank account for security reasons please add this features in this. Thanks.",
+      "score": 4,
+      "thumbsUpCount": 8,
+      "reviewCreatedVersion": "213.1.8 (arm64-v8a_release_flutter)",
+      "at": "2024-02-10 11:46:59",
+      "replyContent": null,
+      "repliedAt": "NaN",
+      "appVersion": "213.1.8 (arm64-v8a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
+  },
+  "17084514431112842": {
+    "keywords": ["None"],
+    "first_order_labels": { "label_list": [] },
+    "second_order_labels": {
+      "label_list": ["other issues"],
+      "label_to_keylist": { "other issues": ["None"] }
+    },
+    "tagging_metadata": {
+      "sentiment": "positive",
+      "priority": "Low",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "9a93cfb4-b4d4-495a-b85f-771bebbe8055",
+      "userName": "Dr Neelesh Aniruddha Dharmadhikari",
+      "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjUJ88pOGamnojGezLEEEdFGGqUvNh0h7MQm5Xx91RFLG7C5",
+      "content": "Thank you, Google Pay, for providing a secure and convenient way to make payments and manage finances. Your easy-to-use interface, fast transactions, and integration with various payment methods simplify the process of sending and receiving money. I am grateful for the seamless payment experience, enhanced security features, and rewards programs you offer, making financial transactions effortless for me as a Medical Doctor.",
+      "score": 5,
+      "thumbsUpCount": 30,
+      "reviewCreatedVersion": "213.1.8 (arm64-v8a_release_flutter)",
+      "at": "2024-02-10 04:20:17",
+      "replyContent": null,
+      "repliedAt": "NaN",
+      "appVersion": "213.1.8 (arm64-v8a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
+  },
+  "17084514431112904": {
+    "keywords": ["convenience fee", "unsatisfied"],
+    "first_order_labels": { "label_list": [] },
+    "second_order_labels": {
+      "label_list": ["other issues"],
+      "label_to_keylist": { "other issues": ["convenience fee", "unsatisfied"] }
+    },
+    "tagging_metadata": {
+      "sentiment": "negative",
+      "priority": "Moderate",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "48921802-1620-4bb2-9a52-1cb91e7a2a00",
+      "userName": "Rutik Salunke",
+      "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocIjc2gIIGpogrphXmrAFM64fydIsXfQ0mbAEqVwqept=mo",
+      "content": "I recently experienced a sense of disappointment with Google Pay due to the introduction of a convenience fee. As a loyal user, I have always appreciated the convenience and efficiency the platform provided. However, the imposition of this additional fee has left me feeling unsatisfied and I'm not happy for this new update I had about extra fee\ud83d\ude14\ud83d\ude14\ud83d\ude14\ud83d\ude14\ud83d\ude14",
+      "score": 1,
+      "thumbsUpCount": 503,
+      "reviewCreatedVersion": "205.1.6 (arm64-v8a_release_flutter)",
+      "at": "2024-01-13 15:49:13",
+      "replyContent": null,
+      "repliedAt": "NaN",
+      "appVersion": "205.1.6 (arm64-v8a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
+  },
+  "17084514431112964": {
+    "keywords": [
+      "cancellation process",
+      "stuck payments",
+      "poor processing of payments"
+    ],
+    "first_order_labels": {
+      "label_list": ["Issues realted to Issues related to Transaction failure"]
+    },
+    "second_order_labels": {
+      "label_list": [
+        "other issues",
+        "Issues realted to Issues related to Transaction failure"
+      ],
+      "label_to_keylist": {
+        "other issues": ["cancellation process", "stuck payments"],
+        "Issues realted to Issues related to Transaction failure": [
+          "poor processing of payments"
+        ]
+      }
+    },
+    "tagging_metadata": {
+      "sentiment": "neutral",
+      "priority": "Moderate",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "08ca6f27-a628-4cf9-a521-9c021e2fbf11",
+      "userName": "Rupam Dey",
+      "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjUTTkumL-sipR1W9q5afWYSOvDZQ7g7fYSuWg6HysGWSgQ",
+      "content": "Any UPI app should install a cancellation process. Sometimes the urgent pqyments are stuck.A stranger won't let me take his goods unless he received the payment. The money can either be refunded or be successful transacted. I won't let anyone take double benefit of the poor processing of payments. The processing payments should be dealt within hours not days.",
+      "score": 1,
+      "thumbsUpCount": 23,
+      "reviewCreatedVersion": "212.1.1 (arm64-v8a_release_flutter)",
+      "at": "2024-02-04 05:08:47",
+      "replyContent": null,
+      "repliedAt": "NaN",
+      "appVersion": "212.1.1 (arm64-v8a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
+  },
+  "17084514431113022": {
+    "keywords": [
+      "Payments getting struck",
+      "Unable to cancel payment",
+      "Multiple payments",
+      "No straightforward process to raise issues",
+      "Pathetic customer service",
+      "Basic issues not considered"
+    ],
+    "first_order_labels": {
+      "label_list": [
+        "Issues realted to Issues related to Customer Support",
+        "Issues related to Digital Payments",
+        "Issues related to Book tickets, shop online, and order meals",
+        "Issues realted to Issues related to Bug Reports",
+        "Issues realted to Issues related to Transaction failure"
+      ]
+    },
+    "second_order_labels": {
+      "label_list": [
+        "Issues related to Fast and secure payments with debit and credit cards",
+        "Issues realted to Issues related to Customer Support",
+        "Issues related to Book tickets, shop online, and order meals",
+        "Issues realted to Issues related to Bug Reports",
+        "Issues realted to Issues related to Transaction failure",
+        "other issues"
+      ],
+      "label_to_keylist": {
+        "Issues realted to Issues related to Transaction failure": [
+          "Payments getting struck"
+        ],
+        "Issues related to Fast and secure payments with debit and credit cards": [
+          "Unable to cancel payment"
+        ],
+        "Issues realted to Issues related to Bug Reports": [
+          "Multiple payments"
+        ],
+        "Issues related to Book tickets, shop online, and order meals": [
+          "No straightforward process to raise issues"
+        ],
+        "Issues realted to Issues related to Customer Support": [
+          "Pathetic customer service"
+        ],
+        "other issues": ["Basic issues not considered"]
+      }
+    },
+    "tagging_metadata": {
+      "sentiment": "negative",
+      "priority": "High",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "3cb8de9b-d4ca-4801-99f2-b190b20613bd",
+      "userName": "nilesh desai",
+      "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocI52ZN3A2yGEq_aAWSVHM5t5IfyOogQ8csotmvoSJE=mo",
+      "content": "Payments initiated are getting struck somewhere in the flow, but this app continues for hours to process those rather than allowing customers to cancel the payment.. customer anyway has to pay through alternate channels for service/product than waiting for completion. But those in process transactions are also getting completed later, which results in multiple payments. no straight forward process to raise issues to get money back.... very pathetic... basic issues are not considered...",
+      "score": 1,
+      "thumbsUpCount": 752,
+      "reviewCreatedVersion": "205.1.2 (arm64-v8a_release_flutter)",
+      "at": "2023-12-12 10:51:38",
+      "replyContent": null,
+      "repliedAt": "NaN",
+      "appVersion": "205.1.2 (arm64-v8a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
+  },
+  "17084514431113090": {
+    "keywords": [
+      "update not installing onto safe folder",
+      "slow download speed for safe folder",
+      "unable to access safe folder after reinstalling the app"
+    ],
+    "first_order_labels": { "label_list": [] },
+    "second_order_labels": {
+      "label_list": ["other issues"],
+      "label_to_keylist": {
+        "other issues": [
+          "update not installing onto safe folder",
+          "slow download speed for safe folder",
+          "unable to access safe folder after reinstalling the app"
+        ]
+      }
+    },
+    "tagging_metadata": {
+      "sentiment": "neutral",
+      "priority": "Low",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "bfc7d2f8-8c41-4913-9601-2de0cde7c717",
+      "userName": "Punith R",
+      "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocIQsahyLmqgz4rXciwKZIhaEzu6NlyUG9d4kC3iW50z=mo",
+      "content": "Google files safe folder-I have extra storage space, rebooted, cleared the cache, stable internet connection etc.. but still the update doesn't seem to be getting installed onto safe folder(just 0-5kb/s). I have around 10gb of files in safe folder. Can i copy the folder to different device and access it again after reinstalling the app?",
+      "score": 1,
+      "thumbsUpCount": 13,
+      "reviewCreatedVersion": "205.1.6 (arm64-v8a_release_flutter)",
+      "at": "2024-01-31 10:15:03",
+      "replyContent": null,
+      "repliedAt": "NaN",
+      "appVersion": "205.1.6 (arm64-v8a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
+  },
+  "17084514431113264": {
+    "keywords": [
+      "worst UPI payment app",
+      "transactions taking days to process",
+      "poor customer support"
+    ],
+    "first_order_labels": {
+      "label_list": [
+        "Issues realted to Issues related to Customer Support",
+        "Issues related to Set UPI PIN for security",
+        "Issues realted to Issues related to Transaction failure"
+      ]
+    },
+    "second_order_labels": {
+      "label_list": [
+        "Issues realted to Issues related to Customer Support",
+        "Issues related to Set UPI PIN for security",
+        "Issues realted to Issues related to Transaction failure"
+      ],
+      "label_to_keylist": {
+        "Issues related to Set UPI PIN for security": ["worst UPI payment app"],
+        "Issues realted to Issues related to Transaction failure": [
+          "transactions taking days to process"
+        ],
+        "Issues realted to Issues related to Customer Support": [
+          "poor customer support"
+        ]
+      }
+    },
+    "tagging_metadata": {
+      "sentiment": "negative",
+      "priority": "Critical",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "4efc96d7-1c30-4fbc-bfce-8b7fe8f40ab0",
+      "userName": "Gopal Naidu",
+      "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjUvfNW6YRlT5MEGYS4ifNJQTDJ2PSSFyUV7tbLgNOEDDQlW",
+      "content": "Such a worst UPI payment app. Not recommended to anyone even in tough time too. Even in these days also, the transactions are getting processed for days together and Literally it's taking 3 working days to resolve it. The way technical team works to resolve the customer issues is too worst. Look at other UPI app customer support, if the money got debited and not credited to beneficiary then within an hours things are getting resolved.",
+      "score": 1,
+      "thumbsUpCount": 12,
+      "reviewCreatedVersion": "205.1.6 (arm64-v8a_release_flutter)",
+      "at": "2024-02-07 02:33:35",
+      "replyContent": null,
+      "repliedAt": "NaN",
+      "appVersion": "205.1.6 (arm64-v8a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
+  },
+  "17084514431113328": {
+    "keywords": [
+      "Payment not credited",
+      "Payment processing issues",
+      "Frequent payment failures",
+      "Embarrassing payment failures",
+      "Not recommended",
+      "Use other UPI apps"
+    ],
+    "first_order_labels": {
+      "label_list": [
+        "Issues realted to Issues related to Transaction failure",
+        "Issues related to Digital Payments"
+      ]
+    },
+    "second_order_labels": {
+      "label_list": [
+        "Issues related to Fast and secure payments with debit and credit cards",
+        "other issues",
+        "Issues related to UPI ID for UPI payments",
+        "Issues realted to Issues related to Transaction failure"
+      ],
+      "label_to_keylist": {
+        "Issues related to Fast and secure payments with debit and credit cards": [
+          "Payment not credited"
+        ],
+        "Issues realted to Issues related to Transaction failure": [
+          "Payment processing issues",
+          "Frequent payment failures",
+          "Embarrassing payment failures"
+        ],
+        "other issues": ["Not recommended"],
+        "Issues related to UPI ID for UPI payments": ["Use other UPI apps"]
+      }
+    },
+    "tagging_metadata": {
+      "sentiment": "negative",
+      "priority": "High",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "a98bbff1-5042-4bb2-a671-2a150e9b87fe",
+      "userName": "SALIQ JAVID BHAT",
+      "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjVz2QGS_UDvHMJniToDV31YgYZpGCIfxPxuq8lkQj7Jl5c",
+      "content": "Pathetic app. Payment gets debited from your account & shows still processing. Beneficiary confirmed the payment has not been credited. It doesn't happen one time or two times, but happens on several occasions. Its so embarrassing, when your payment fails. I will not recommend Google pay to anybody. Kindly use other upi apps for payments.",
+      "score": 1,
+      "thumbsUpCount": 186,
+      "reviewCreatedVersion": "205.1.2 (arm64-v8a_release_flutter)",
+      "at": "2023-12-13 10:08:16",
+      "replyContent": "Uh-oh. We're sorry, Saliq. Please check if you're on the latest version of the app and have a stable internet connection. Some more information that can help: https://goo.gle/2EwevX6. For further assistance, reach out to our support team. Here's how:\nhttps://goo.gle/2PQQFuc.",
+      "repliedAt": "2023-12-13 10:50:57",
+      "appVersion": "205.1.2 (arm64-v8a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
+  },
+  "17084514431113398": {
+    "keywords": [
+      "Payment delays",
+      "False errors",
+      "Charging fees for recharges"
+    ],
+    "first_order_labels": {
+      "label_list": [
+        "Issues related to Find prepaid recharge plans",
+        "Issues related to Provide loans"
+      ]
+    },
+    "second_order_labels": {
+      "label_list": [
+        "Issues related to Find prepaid recharge plans",
+        "other issues",
+        "Issues related to Provide loans"
+      ],
+      "label_to_keylist": {
+        "Issues related to Provide loans": ["Payment delays"],
+        "other issues": ["False errors"],
+        "Issues related to Find prepaid recharge plans": [
+          "Charging fees for recharges"
+        ]
+      }
+    },
+    "tagging_metadata": {
+      "sentiment": "negative",
+      "priority": "High",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "d7af4da9-5079-473f-a0a9-f38be9ccd27d",
+      "userName": "R j",
+      "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjVwOKWGP2ko9mpCoUtZbHbAGXiEuwI2SuAGjl3Tm_6vyLw",
+      "content": "Recently, whenever i try to pay to important transactions like, hospital, car payments, credit payments, it never pays immediately, even in 5g areas, rather it shows check your bank transactions, even if amount is deducted, it still shows payment processing, which is another time waste, recently they're also charging fees for recharges, but first fix this false errors please",
+      "score": 1,
+      "thumbsUpCount": 73,
+      "reviewCreatedVersion": "210.1.2 (arm64-v8a_release_flutter)",
+      "at": "2024-01-22 08:16:05",
+      "replyContent": "Uh-oh. We're sorry. Please check if you're on the latest version of the app and have a stable internet connection. Some more information that can help: https://goo.gle/2EwevX6. For further assistance, reach out to our support team. Here's how: https://goo.gle/2PQQFuc.",
+      "repliedAt": "2023-03-15 14:50:54",
+      "appVersion": "210.1.2 (arm64-v8a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
+  },
+  "17084514431113468": {
+    "keywords": [
+      "issue with addresses",
+      "no review or edit page",
+      "costed me time, money, gas, and my well being"
+    ],
+    "first_order_labels": { "label_list": [] },
+    "second_order_labels": {
+      "label_list": ["other issues"],
+      "label_to_keylist": {
+        "other issues": [
+          "issue with addresses",
+          "no review or edit page",
+          "costed me time, money, gas, and my well being"
+        ]
+      }
+    },
+    "tagging_metadata": {
+      "sentiment": "negative",
+      "priority": "High",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "64d0cd5c-6112-43f2-9cb4-230d2a3510f8",
+      "userName": "nick sisneros",
+      "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjX42FVRQcsq4p44sZPchw61l5JIcS4zQ8cFhYLW5K9bW_I",
+      "content": "This app plugin has an issue. A humongous issue with addresses. There is no review or edit page when buying anything through chrome. Every single website in existence has a secondary page to review an address for an order. This app doesn't have this essential function and has costed me time, money, gas, and my well being.",
+      "score": 1,
+      "thumbsUpCount": 62,
+      "reviewCreatedVersion": "210.1.2 (arm64-v8a_release_flutter)",
+      "at": "2024-01-23 00:27:28",
+      "replyContent": null,
+      "repliedAt": "NaN",
+      "appVersion": "210.1.2 (arm64-v8a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
+  },
+  "17084514431113536": {
+    "keywords": [
+      "transaction failed",
+      "deducted from account",
+      "customer care",
+      "refund delay",
+      "other platforms better"
+    ],
+    "first_order_labels": {
+      "label_list": [
+        "Issues realted to Issues related to Customer Support",
+        "Issues realted to Issues related to Transaction failure",
+        "Issues related to Provide loans"
+      ]
+    },
+    "second_order_labels": {
+      "label_list": [
+        "other issues",
+        "Issues realted to Issues related to Customer Support",
+        "Issues realted to Issues related to Transaction failure",
+        "Issues related to Provide loans"
+      ],
+      "label_to_keylist": {
+        "Issues realted to Issues related to Transaction failure": [
+          "transaction failed"
+        ],
+        "other issues": ["deducted from account", "other platforms better"],
+        "Issues realted to Issues related to Customer Support": [
+          "customer care"
+        ],
+        "Issues related to Provide loans": ["refund delay"]
+      }
+    },
+    "tagging_metadata": {
+      "sentiment": "negative",
+      "priority": "High",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "630b262a-4f71-43c2-b324-706352007728",
+      "userName": "Minakshi Mewara",
+      "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocLGd_k3Bf6zyZtwu0OdifDfTjQsFUsGxaWIqjqR2SP_=mo",
+      "content": "This is worst app. I have transferred amount to my father in a emergency situation but transaction is failed but deducted from my account.. i contacted to customer care but they were saying that there is standard time for refund. Couldn't solved my problem. Other plateforms are better than Google pay.",
+      "score": 1,
+      "thumbsUpCount": 52,
+      "reviewCreatedVersion": "210.1.2 (arm64-v8a_release_flutter)",
+      "at": "2024-01-19 14:31:12",
+      "replyContent": null,
+      "repliedAt": "NaN",
+      "appVersion": "210.1.2 (arm64-v8a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
+  },
+  "17084514431113604": {
+    "keywords": [
+      "Bank account deleted",
+      "Unable to add account",
+      "Account linked with multiple accounts",
+      "App's fault and error",
+      "Unable to uninstall app"
+    ],
+    "first_order_labels": {
+      "label_list": [
+        "Issues realted to Issues related to Bug Reports",
+        "Issues realted to Issues related to Transaction failure",
+        "Issues related to managing bank accounts"
+      ]
+    },
+    "second_order_labels": {
+      "label_list": [
+        "Issues realted to Issues related to Bug Reports",
+        "Issues realted to Issues related to Transaction failure",
+        "Issues related to Link bank account with registered mobile number"
+      ],
+      "label_to_keylist": {
+        "Issues related to Link bank account with registered mobile number": [
+          "Bank account deleted",
+          "Unable to add account",
+          "Account linked with multiple accounts"
+        ],
+        "Issues realted to Issues related to Transaction failure": [
+          "App's fault and error"
+        ],
+        "Issues realted to Issues related to Bug Reports": [
+          "Unable to uninstall app"
+        ]
+      }
+    },
+    "tagging_metadata": {
+      "sentiment": "negative",
+      "priority": "High",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "d897de2a-bd36-4e02-a00e-1fde5265280e",
+      "userName": "Ramchandra Gupta",
+      "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjUxBhomquRAHqk4F51sY0nCBX9pyWXdiXAk3obkLvTXuSo",
+      "content": "My bank account is deleted from the app and now I am not able to add the account. Every time I try to add the account it states that your account is liked with many accounts but I only have 1 account in the bank. I also had a talk with the bank but they said it's the app's fault and error. It's been more then a month. Please let me know what can I do as I'm not able to uninstall the app.",
+      "score": 1,
+      "thumbsUpCount": 31,
+      "reviewCreatedVersion": "210.1.2 (arm64-v8a_release_flutter)",
+      "at": "2024-01-25 17:16:20",
+      "replyContent": null,
+      "repliedAt": "NaN",
+      "appVersion": "210.1.2 (arm64-v8a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
+  },
+  "17084514431113674": {
+    "keywords": [
+      "Not enough cashbacks as rewards",
+      "Offers not compatible with purchasing history"
+    ],
+    "first_order_labels": {
+      "label_list": [
+        "Issues related to Refer friends and earn rewards",
+        "Issues related to Digital Payments"
+      ]
+    },
+    "second_order_labels": {
+      "label_list": [
+        "Issues related to Simple and secure payments app",
+        "Issues related to Refer friends and earn rewards"
+      ],
+      "label_to_keylist": {
+        "Issues related to Refer friends and earn rewards": [
+          "Not enough cashbacks as rewards"
+        ],
+        "Issues related to Simple and secure payments app": [
+          "Offers not compatible with purchasing history"
+        ]
+      }
+    },
+    "tagging_metadata": {
+      "sentiment": "negative",
+      "priority": "Low",
+      "language": "english"
+    },
+    "other_metadata_dict": {
+      "reviewId": "9362bffb-e2f9-4302-b2fb-6359378fdeb0",
+      "userName": "Adarsh J",
+      "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjWI0YwnOT-EiipFLzwcXHf2YSNwEgu1-gPXygmJkwVIvC8",
+      "content": "This app is best in terms of usability. But if you are expecting more rewards after payments, this is not your place ! It will not give enough cashbacks as rewards based on our payment history. For eg; If there is an option for cashback of 5-100 rupees, The app will only choose for 5 rupees as reward. Also we are getting offers from brands which are not compatible with our purchasing history ! I don't think it is a good trend as the competition between payment apps is already intensified. \ud83e\udd72",
+      "score": 4,
+      "thumbsUpCount": 393,
+      "reviewCreatedVersion": "205.1.5 (arm64-v8a_release_flutter)",
+      "at": "2023-12-28 12:13:10",
+      "replyContent": null,
+      "repliedAt": "NaN",
+      "appVersion": "205.1.5 (arm64-v8a_release_flutter)",
+      "country": "in",
+      "lang": "en"
+    }
   }
-]
+}

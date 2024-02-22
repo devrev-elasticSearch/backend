@@ -1,0 +1,102 @@
+{
+    "name":"Google Pay",
+    "description":"Google play is a good app",
+    "first_order_labels":[
+        {
+            "name":"Issues related to Digital Payments",
+            "second_order_labels":[
+                "Issues related to Simple and secure payments app",
+                "Issues related to UPI ID for UPI payments",
+                "Issues related to Convenient bill payments",
+                "Issues related to QR code payments",
+                "Issues related to Fast and secure payments with debit and credit cards",
+                "Issues related to Send money via UPI transfers"
+            ]
+        },
+        {
+            "name":"Issues related to managing bank accounts",
+            "second_order_labels":[
+                "Issues related to Link bank account with registered mobile number",
+                "Issues related to Check bank account balance"
+            ]
+        },
+        {
+            "name":"Issues related to Set UPI PIN for security",
+            "second_order_labels":[
+                "Issues related to Set UPI PIN for security"
+            ]
+        },
+        {
+            "name":"Issues related to Multiple layers of security from bank and Google",
+            "second_order_labels":[
+                "Issues related to Multiple layers of security from bank and Google"
+            ]
+        },
+        {
+            "name":"Issues related to Find prepaid recharge plans",
+            "second_order_labels":[
+                "Issues related to Find prepaid recharge plans"
+            ]
+        },
+        {
+            "name":"Issues related to Refer friends and earn rewards",
+            "second_order_labels":[
+                "Issues related to Refer friends and earn rewards"
+            ]
+        },
+        {
+            "name":"Issues related to Book tickets, shop online, and order meals",
+            "second_order_labels":[
+                "Issues related to Book tickets, shop online, and order meals"
+            ]
+        },
+        {
+            "name":"Issues related to Buy, sell, and earn 24K Gold",
+            "second_order_labels":[
+                "Issues related to Buy, sell, and earn 24K Gold"
+            ]
+        },
+        {
+            "name":"Issues related to Provide loans",
+            "second_order_labels":[
+                "Issues related to Provide loans"
+            ]
+        },
+        {
+            "name":"Issues realted to Issues related to Bug Reports",
+            "second_order_labels":[
+                "Issues realted to Issues related to Bug Reports"
+            ]
+        },
+        {
+            "name":"Issues realted to Issues related to Requesting for new features",
+            "second_order_labels":[
+                "Issues realted to Issues related to Requesting for new features"
+            ]
+        },
+        {
+            "name":"Issues realted to Issues related to Customer Support",
+            "second_order_labels":[
+                "Issues realted to Issues related to Customer Support"
+            ]
+        },
+        {
+            "name":"Issues realted to Issues related to  debit/credit cards compatibility",
+            "second_order_labels":[
+                "Issues realted to Issues related to  debit/credit cards compatibility"
+            ]
+        },
+        {
+            "name":"Issues realted to Issues related to Transaction failure",
+            "second_order_labels":[
+                "Issues realted to Issues related to Transaction failure"
+            ]
+        },
+        {
+            "name":"Issues realted to Issues related to Security and Privacy Issues",
+            "second_order_labels":[
+                "Issues realted to Issues related to Security and Privacy Issues"
+            ]
+        }
+    ]
+}

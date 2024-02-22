@@ -2,6 +2,7 @@ dataIndexName = "datamodel"
 
 dataMapping = {
     "properties":{
+        "app_name":{"type":"keyword","index":True},
         "id":{"type":"text"},
         "date": {"type": "date","index":True},
         "metadata":{ "type": "object" },
@@ -10,8 +11,8 @@ dataMapping = {
         "attributes":{
             "properties":{
                 "keywords":{"type":"text"},
-                "first_order_label":{"type":"keyword"},
-                "second_order_label":{"type":"keyword"},
+                "first_order_labels":{"type":"keyword"},
+                "second_order_labels":{"type":"keyword"},
                 "sentiment":{"type":"keyword"},
                 "priority":{"type":"keyword"},
             }

@@ -10,9 +10,18 @@ load_dotenv()
 accessKey = os.getenv("accessKey")
 secretKey = os.getenv("secretKey")
 region = os.getenv("region")
-queueUrl = os.getenv("queueUrl")
 
 sqs = boto3.client('sqs', region_name=region, aws_access_key_id=accessKey, aws_secret_access_key=secretKey)
+
+def publishToSqsQueue(queueUrl, messageBody={}):
+    # Send message to SQS queue
+    response = sqs.send_message(
+        QueueUrl=queueUrl,
+        DelaySeconds=10,
+        MessageBody=json.dumps(messageBody)
+    )
+
+    return response
 
 def pollSqsQueue(queueUrl,  maxMessages=1, waitTimeSeconds=20):
     # Create an SQS client with your credentials
@@ -34,7 +43,7 @@ def pollSqsQueue(queueUrl,  maxMessages=1, waitTimeSeconds=20):
 
     return messages
 
-def loop(timeInMinutes=10,maxMessages=1,callback=print):
+def loop(queueUrl,timeInMinutes=10,maxMessages=1,callback=print):
     while True:
         messages = pollSqsQueue(queueUrl, maxMessages=maxMessages)
         totalMessages = []
@@ -52,5 +61,4 @@ def loop(timeInMinutes=10,maxMessages=1,callback=print):
                 )
 
         callback(totalMessages)
-        print(totalMessages)
         time.sleep(timeInMinutes*60)
