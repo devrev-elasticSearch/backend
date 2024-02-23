@@ -2,13 +2,13 @@ appIndexName = 'appindex'
 
 appMapping = {
     "properties":{
-        "name":{ "type":"text","index":True },
+        "name":{ "type":"keyword","index":True },
         "description":{ "type":"text" },
         "first_order_labels":{
             "type":"nested",
             "properties":{
-                "name":{ "type":"text" },
-                "second_order_labels":{"type":"object"}
+                "name":{ "type":"keyword" },
+                "second_order_labels":{"type":"keyword"}
             }
         }
     }

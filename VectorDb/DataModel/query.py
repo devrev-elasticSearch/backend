@@ -21,6 +21,17 @@ def queryInDateRange(start, end, indexName=dataIndexName):
     res = api.client.search(index=indexName, body=dataQuery, ignore=400)
     return getHitsFromResult(res)
 
+def queryByAppName(appName, indexName=dataIndexName):
+    dataQuery={
+        "query": {
+            "term": {
+                "app_name": appName
+            }
+        }
+    }
+    res = api.client.search(index=indexName, body=dataQuery, ignore=400)
+    return getHitsFromResult(res)
+
 def queryByIdList(indexName, idList):
     dataQuery={
         "query": {
@@ -127,12 +138,23 @@ class QueryBuilder:
         return self
     
     def addKeywordMatch(self, field, keyWordList):
-        keywordMatch = {
-            "match": {
-                field: keyWordList
+
+        if(type(keyWordList) != list):
+            keywordMatch = {
+                "match": {
+                    field: keyWordList
+                }
             }
-        }
-        self.query["query"]["bool"]["must"].append(keywordMatch)
+            self.query["query"]["bool"]["must"].append(keywordMatch)
+        
+        else:
+            for keyword in keyWordList:
+                keywordMatch = {
+                    "match": {
+                        field: keyword
+                    }
+                }
+                self.query["query"]["bool"]["must"].append(keywordMatch)
         return self
 
     
@@ -140,8 +162,8 @@ class QueryBuilder:
         if "start_date" in values and "end_date" in values:
             self.addRangeQuery("date", values["start_date"], values["end_date"])
 
-        if "first_order_label" in values:
-            self.addTermQuery("attributes.first_order_label", values["first_order_label"])
+        if "first_order_labels" in values:
+            self.addKeywordMatch("attributes.first_order_labels", values["first_order_labels"])
 
         if "sentiment" in values:
             self.addTermQuery("attributes.sentiment", values["sentiment"])
@@ -149,11 +171,14 @@ class QueryBuilder:
         if "priority" in values:
             self.addTermQuery("attributes.priority", values["priority"])
         
-        if "second_order_label" in values:
-            self.addTermQuery("attributes.second_order_label", values["second_order_label"])
+        if "second_order_labels" in values:
+            self.addKeywordMatch("attributes.second_order_labels", values["second_order_labels"])
 
         if "keywords" in values:
             self.addKeywordMatch("attributes.keywords", values["keywords"])
+
+        if "app_name" in values:
+            self.addTermQuery("app_name", values["app_name"])
 
     def execute(self):
         res = api.client.search(index=self.indexName, body=self.query, ignore=400)

@@ -10,7 +10,7 @@ dataMapping = {
         "main_text":{ "type": "text" },
         "attributes":{
             "properties":{
-                "keywords":{"type":"text"},
+                "keywords":{"type":"keyword"},
                 "first_order_labels":{"type":"keyword"},
                 "second_order_labels":{"type":"keyword"},
                 "sentiment":{"type":"keyword"},

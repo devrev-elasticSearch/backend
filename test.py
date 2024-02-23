@@ -113,7 +113,8 @@ if __name__ == "__main__":
 
     # with open('dummy_app.json') as json_file:
     #     dummyData = json.load(json_file)
-
+    
+    # print(dummyData)
     # appInsert.insertAppData(dummyData)
     # dummyData = []
     # with open('sample.json') as json_file:
@@ -125,7 +126,7 @@ if __name__ == "__main__":
     #     data=dummyData[key]
     #     temp=dict()
     #     unixTimestamp = int(datetime.timestamp(datetime.strptime(data['other_metadata_dict']["at"],"%Y-%m-%d %H:%M:%S")))
-    #     temp["app_name"]="Google Play"
+    #     temp["app_name"]="Google Pay"
     #     temp["date"]=unixTimestamp,
     #     temp["main_text"]=data['other_metadata_dict']['content']
     #     temp["attributes"]={
@@ -142,10 +143,14 @@ if __name__ == "__main__":
     #     json.dump(d, outfile)
 
     # dummyData = []
-
     # with open('dummy_datamodel.json') as json_file:
     #     dummyData = json.load(json_file)
     
     # dataInsert.bulkInsert(dummyData)
-    print(api.getAllRecords(dataMapping.dataIndexName))
+    # print(api.getAllRecords(dataMapping.dataIndexName))
+    # api.deleteIndex(appMapping.appIndexName)
+    # api.createIndex(appMapping.appIndexName)
+    # api.createMapping(appMapping.appIndexName, appMapping.appMapping)
+    # api.deleteAllRecords(dataMapping.dataIndexName)
+    print("hello")
 
