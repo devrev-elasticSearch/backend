@@ -114,7 +114,6 @@ if __name__ == "__main__":
     # with open('dummy_app.json') as json_file:
     #     dummyData = json.load(json_file)
     
-    # print(dummyData)
     # appInsert.insertAppData(dummyData)
     # dummyData = []
     # with open('sample.json') as json_file:
@@ -152,5 +151,7 @@ if __name__ == "__main__":
     # api.createIndex(appMapping.appIndexName)
     # api.createMapping(appMapping.appIndexName, appMapping.appMapping)
     # api.deleteAllRecords(dataMapping.dataIndexName)
+    # api.deleteAllRecords(appMapping.appIndexName)
+    # api.deleteIndex(appMapping.appIndexName)
     print("hello")
 

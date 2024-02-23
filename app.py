@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
-from VectorDb.AppModel import query
-from VectorDb.DataModel import query
+from VectorDb.AppModel import query as appQuery
+from VectorDb.DataModel import query as dataQuery
 import json
 
 
@@ -24,7 +24,7 @@ def firstorderlabel():
         return jsonify({"error": "Invalid request"}), 400
     appName = body["app_name"]
     print(appName)
-    res = query.queryByAppName(appName)
+    res = appQuery.queryByAppName(appName)
 
     res = res[0]
     res = [x['name'] for x in res["_source"]["first_order_labels"]]
@@ -42,7 +42,7 @@ def secondorderlabels():
         return jsonify({"error": "Invalid request"}), 400
     appName = body["app_name"]
     firstOrderLabel = body["first_order_label"]
-    res = query.queryAppName(appName)
+    res = appQuery.queryByAppName(appName)
 
     res = [x["_source"]["first_order_labels"] for x in res]
     res = [x for x in res if x["name"] == firstOrderLabel]
@@ -59,7 +59,7 @@ def getall():
     if("app_name" not in body):
         return jsonify({"error": "Invalid request"}), 400
     appName = body["app_name"]
-    res = query.queryByAppName(appName)
+    res = dataQuery.queryByAppName(appName)
     res = [x["_source"] for x in res]
     return jsonify(res)
 
@@ -92,7 +92,7 @@ def filterDataModel():
     if(body == None):
         return jsonify({"error": "Invalid request"}), 400
     
-    queryBuilder = query.QueryBuilder()
+    queryBuilder = dataQuery.QueryBuilder()
     queryBuilder.buildQuery(body)
     res = queryBuilder.execute()
 

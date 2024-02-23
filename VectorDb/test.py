@@ -65,4 +65,4 @@ if __name__ == "__main__":
     # rawDataInsert.bulkInsert(dataList)
     # print(api.getAllRecords(rawDataMapping.rawDataIndexName, size=3))
     # print("Index Created")
-    sqs.loop(callback=rawDataInsert.bulkInsert)
+    # sqs.loop(callback=rawDataInsert.bulkInsert)

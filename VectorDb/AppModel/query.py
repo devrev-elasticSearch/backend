@@ -8,7 +8,7 @@ def getHitsFromResult(res):
     return res["hits"]["hits"]
 
 
-def queryAppName(appName, indexName=appIndexName):
+def queryByAppName(appName, indexName=appIndexName):
     # print(api.getAllRecords(indexName))
     dataQuery={
         "query": {
