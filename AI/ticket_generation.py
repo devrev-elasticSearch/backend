@@ -117,6 +117,7 @@ def issue_ticket_based_on_high_prio_v2(standad_phase1_result,fixed_first_order_l
         freq[k][-1]['id'] = standad_phase1_result[_]['id']
   
   freq = dict(freq)
+  # print(freq)
   for fff in freq:
     print(fff,len(freq[fff]))
 
@@ -141,18 +142,22 @@ def issue_ticket_based_on_high_prio_v2(standad_phase1_result,fixed_first_order_l
     common_first_order_label =  issue
     urgent_frequency = len(freq[issue])
     ticket = create_ticket(high_prio_review_list, common_first_order_label, urgent_frequency)
+    print(ticket)
+    if ('title' not in ticket.keys()) or (ticket['title']=="Ticket Title"):
+      ticket['title'] = common_first_order_label
     return {
         fixed_first_order_label:ticket
         }
 
   tickets = {}
+  # print(freq)
   for issue in freq:
-    if issue != 'other issues' and len(freq[issue])>count_cutoff:
+    if issue != 'other issues' and len(freq[issue])>=count_cutoff:
       high_prio_review_list = freq[issue]
       common_first_order_label =  issue
       urgent_frequency = len(freq[issue])
       tickets[issue] = create_ticket(high_prio_review_list, common_first_order_label, urgent_frequency)
-      if ('title' not in tickets[issue].keys()) or (tickets[issue]['title']=="Ticket Title"):
+      if (tickets[issue]['title']=="Ticket Title"):
         tickets[issue]['title'] = common_first_order_label
 
   return tickets

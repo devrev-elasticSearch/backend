@@ -13,14 +13,20 @@ ticketUrl = os.getenv("ticketQueue")
 def generateTickets():
     while True:
         try:
-            message = dataQuery.getRandomHighPriorityDataElementInLastDays(5000)
+            message = dataQuery.getRandomHighPriorityDataElementInLastDays(days=5000)
             firstOrderLabel = message[0]['attributes']['first_order_labels'][0]
             
-            ticket = ticket_generation.issue_ticket_based_on_high_prio_v2(message, firstOrderLabel,1)
-            sqs.publishToSqsQueue(ticketUrl, [[ticket[k] for k in ticket.keys()]])
-            print("Ticket generated for first order label: ", ticket[firstOrderLabel])
-            time.sleep(10)
+            ticket = ticket_generation.issue_ticket_based_on_high_prio_v2(message, "None",1)
+            
+            for t in ticket.keys():
+                if ticket[t]['title'] is None:
+                    ticket[t]['title'] = t
+            
+            for k in ticket.keys():
+                sqs.publishToSqsQueue(ticketUrl, [ticket[k]])
+            print("Ticket generated for first order label: ", ticket)
+            time.sleep(5)
         
         except Exception as e:
-            print(e)
-            time.sleep(5)
+            # print(e)
+            time.sleep(1)

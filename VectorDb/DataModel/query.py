@@ -238,7 +238,7 @@ def getRandomHighPriorityDataElementInLastDays(days=7,appName="Google Pay",index
         ]
     }
     res = api.client.search(index=indexName, body=dataQuery, ignore=400,size=1000)
-    return  [x['_source'] for x in getHitsFromResult(res)]
+    return  [x['_source'] for x in [getHitsFromResult(res)[0]]]
 
 def queryByKnnSparseVector(vector, k=1, indexName=dataIndexName):
     #define script for cosine similarity
