@@ -16,6 +16,7 @@ from Integration.DataModelCreator import loop
 from Integration.TicketGenerator import generator
 from datetime import datetime
 from AI import ticket_generation
+from AI import utils
 import json
 
 if __name__ == "__main__":
@@ -176,8 +177,8 @@ if __name__ == "__main__":
     # print(api.getAllRecords(dataMapping.dataIndexName) )
     # firstOrderLabel = appQuery.queryRandomFirstOrderLabel()
     # print(dataQuery.getRandomHighPriorityDataElementInLastDays(50000))
-    
-    generator.generateTickets()
+    print(utils.get_app_model("com.google.android.apps.nbu.paisa.user","Google Pay"))
+    # generator.generateTickets()
     #print(ticket_generation.issue_ticket_based_on_high_prio_v2(dataQuery.queryForDataByFirstOrderLabelInPrevDays(dataQuery.queryMaxFirstOrderLabel(1000)),dataQuery.queryMaxFirstOrderLabel(1000),1))
     print("hello")
 

@@ -2,6 +2,7 @@ from .common_imports import *
 from .semantic_union import *
 from .taggers_and_routers import *
 from .custom_langchain_tools import *
+from .google_play_scrape_utils import *
 
 from dotenv import load_dotenv
 
@@ -57,7 +58,7 @@ def standardize_app_description(api_result_app, summarized_app_description_list,
 
 
 # Running utility function for app description generation
-def generate_full_app_descritpion(api_result_app, general_descripion = "App reviews of a Payment and UPI App",multi_qry_count_per_label = 10):
+def generate_full_app_descritpion(api_result_app, generic_raw_clusters, general_descripion ,multi_qry_count_per_label = 10):
     api_result_app_description = api_result_app['description']
     print("----------------------------------- App Description -----------------------------------")
     print(api_result_app_description)
@@ -68,14 +69,6 @@ def generate_full_app_descritpion(api_result_app, general_descripion = "App revi
     print(summarized_app_description_text)
     print("---------------------------------------------------------------------------------------")
 
-    generic_raw_clusters = [
-        'Bug Reports', 
-        'Requesting for new features or limited feature', 
-        'Issues related to Customer Support', 
-        'Issues related to debit/credit cards compatibility',
-        'Issues related to Transaction failure',
-        'Issues related to Security and Privacy',
-        ]
     generated_raw_clusters = ["Issues related to "+_ for _ in summarized_app_description_list]
 
     # First order labels and their mapping to second order labels
@@ -219,3 +212,13 @@ def run_phase1(vectors, app_meta,start_index=None,end_index=None,chunk_mode=Fals
 
   phase1_result = statndardize_phase1_output(phase1_result,app_meta)
   return phase1_result,phase1_cluster_labels_meta
+
+def get_app_model(app_id, app_name, generic_raw_clusters=['Bug Reports', 'Requesting for new features or limited feature', 'Issues related to Customer Support', ' Issues related to debit/credit cards compatibility','Issues related to Transaction failure','Issues related to Security and Privacy'], general_descripion="App Reviews for a payment and UPI app", multi_qry_count_per_label=10):
+    loaded_api_result_app = fetch_app_description(app_id, app_name)
+    standard_app_description = generate_full_app_descritpion(
+        api_result_app = loaded_api_result_app,
+        generic_raw_clusters=generic_raw_clusters,
+        general_descripion=general_descripion,
+        multi_qry_count_per_label=multi_qry_count_per_label
+        )
+    return standard_app_description

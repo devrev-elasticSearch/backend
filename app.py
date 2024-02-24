@@ -62,6 +62,13 @@ def getall():
     appName = body["app_name"]
     res = dataQuery.queryByAppName(appName)
     res = [x["_source"] for x in res]
+    
+    for data in res:
+        temp = dict()
+        
+        for arr in data["attributes"]["second_order_label_to_keywordlist"]:
+            temp[arr["name"]] = arr["keywords"]
+        data['attributes']["second_order_labels"] = temp
     return jsonify(res)
 
 '''
