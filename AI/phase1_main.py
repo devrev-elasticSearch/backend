@@ -1,8 +1,8 @@
-from .common_imports import *
-from .semantic_union import *
-from .utils import *
-from .custom_langchain_tools import *
-from .taggers_and_routers import *
+from common_imports import *
+from semantic_union import *
+from utils import *
+from custom_langchain_tools import *
+from taggers_and_routers import *
 
 
 if __name__ == "__main__":
@@ -21,7 +21,7 @@ if __name__ == "__main__":
 
     # Run the phase 1 model
     start_index=None # 0
-    end_index=2 # Number of reviews (But testing e 10 dbo)
+    end_index=20 # Number of reviews (But testing e 10 dbo)
     chunk_mode=False # Is the data chunked
     p_flag=False # Are we processing the postive reviews
     price_flag=False # Are we processing the price

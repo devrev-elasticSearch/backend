@@ -1,9 +1,9 @@
-from .common_imports import *
+from common_imports import *
 from dotenv import load_dotenv
 
 load_dotenv()
 
-def assign_title_to_groups(groups):
+def assign_title_to_groups(groups,custom_input_template = None):
   titles = [None]
 
   class StringSaveNamerToolCheckInput(BaseModel):
@@ -27,7 +27,7 @@ def assign_title_to_groups(groups):
       args_schema: Optional[Type[BaseModel]] = StringSaveNamerToolCheckInput
 
   tools = [StringSaveTool()]
-  
+
   llm = ChatOpenAI(
       openai_api_key=os.getenv("OPENAI_API"),
       openai_organization=os.getenv("OPENAI_ORG"),
@@ -40,26 +40,25 @@ def assign_title_to_groups(groups):
       llm=llm,
       verbose=False,
   )
+  if custom_input_template is None:
+    input_template = f"""
+      Given a list of same type of phrases :
+      {' , '.join(groups)} .
 
-  input_template = f"""
-    Given a list of same type of phrases :
-    {' , '.join(groups)} .
+      Your task is to assign a <common technical phrase> that best describes this list.
+      This list cover mutiple same type of problems of certain type of user reviews.
 
-    Your task is to assign a <common technical phrase> that best describes this list.
-    This list cover mutiple same type of problems of certain type of user reviews.
+      The <common technical phrase> must describe the common meaning of the entire list.
+      The <common technical phrase> must be brief and it should contain technical words to describe the whole list EXACTLY and UNAMBIGUOUSLY. It should start with 'Issues related to'
 
-    The <common technical phrase> must describe the common meaning of the entire list.
-    The <common technical phrase> must be brief and it should contain technical words to describe the whole list EXACTLY and UNAMBIGUOUSLY. It should start with 'Issues related to'
-
-    Answer: <common technical phrase to describe the list>
-    Invoke a relevant tool when you need to store <common technical phrase>.
-    """
-
+      Answer: <common technical phrase to describe the list>
+      Invoke a relevant tool when you need to store <common technical phrase>.
+      """
+  else:
+    input_template = custom_input_template 
+    
   agent(input_template)['output']
   return titles[0]
-
-
-
 
 
 def union_lists(list1:List[str], list2:List[str],threshold=0.85):

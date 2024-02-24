@@ -1,7 +1,7 @@
-from .common_imports import *
-from .semantic_union import *
-from .taggers_and_routers import *
-from .custom_langchain_tools import *
+from common_imports import *
+from semantic_union import *
+from taggers_and_routers import *
+from custom_langchain_tools import *
 
 from dotenv import load_dotenv
 
@@ -161,8 +161,9 @@ def run_phase1(vectors, app_meta,start_index=None,end_index=None,chunk_mode=Fals
   phase1_cluster_labels_meta = {}
   start_index = 0 if start_index is None else start_index
   end_index = len(vectors) if end_index is None else end_index
-  
+  __total_len = len(vectors[start_index:end_index])
   for _vid,_vec in enumerate(list(vectors)[start_index:end_index]): 
+    print(f"Processing {_vid+1}/{__total_len} ...")
     _vtext = vectors[_vid]["text"]
     _pos ,_negs = key_word_extractor(summarized_app_description_text, _vtext,p_flag=p_flag,s_flag=not chunk_mode)
     phase1_result[_vid] = {'keywords':_negs}
