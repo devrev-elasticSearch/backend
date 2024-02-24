@@ -1,0 +1,117 @@
+[
+    {
+        "app_name": "GooglePay",
+        "id": "[Processed]_Ticket created from Playstore review 945423f1-07b7-4599-9f9f-1cbda20a3d35",
+        "date": "2024-02-05 15:13:15",
+        "metadata": {
+            "reviewId": "945423f1-07b7-4599-9f9f-1cbda20a3d35",
+            "userName": "Referral Code - j3p830",
+            "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjUlba6XHmCjMwG-6-U0Qx2iyPsBoDTJl3ufyfu6O6TxmQ",
+            "content": "Better than other apps. I can't use the app with the current changes. Previous Review Very good banking software that does it everything. I adore this application. If the PPF account can also be examined, it would be fantastic. The user interface is quite intuitive, and the application is light and quick. I've watched this software develop from a basic version with limited features to the robust version it is today. far superior to its rival banking apps.",
+            "score": 5,
+            "thumbsUpCount": 7352,
+            "reviewCreatedVersion": "212.1.1 (arm64-v8a_release_flutter)",
+            "at": "2024-02-05 15:13:15",
+            "replyContent": null,
+            "repliedAt": "NaN",
+            "appVersion": "212.1.1 (arm64-v8a_release_flutter)",
+            "cou_lan": "in-en"
+        },
+        "subinfo": {},
+        "main_text": "Better than other apps. I can't use the app with the current changes. Previous Review Very good banking software that does it everything. I adore this application. If the PPF account can also be examined, it would be fantastic. The user interface is quite intuitive, and the application is light and quick. I've watched this software develop from a basic version with limited features to the robust version it is today. far superior to its rival banking apps.",
+        "attributes": {
+            "keywords": [
+                "can't use the app with the current changes",
+                "limited features"
+            ],
+            "first_order_labels": [
+                "Bug Reports",
+                "Requesting for new features or limited feature"
+            ],
+            "second_order_labels": [
+                "Bug Reports",
+                "Requesting for new features or limited feature"
+            ],
+            "sentiment": "positive",
+            "priority": "Low",
+            "pricing": {
+                "is_pricing": "No",
+                "sentiment_of_current_pricing": "",
+                "satisfaction_of_users": "",
+                "worthiness_of_pricing": "",
+                "suggestions_on_pricing": ""
+            },
+            "feature_requests": {
+                "is_feature": "",
+                "suggetions_on_features": []
+            },
+            "positive_keywords": [],
+            "second_order_label_to_keywordlist": [
+                {
+                    "name": "Bug Reports",
+                    "keywords": [
+                        "can't use the app with the current changes"
+                    ]
+                },
+                {
+                    "name": "Requesting for new features or limited feature",
+                    "keywords": [
+                        "limited features"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "app_name": "GooglePay",
+        "id": "[Processed]_Ticket created from Playstore review f67ce3de-9d79-426e-b42c-8b9c9336e7c1",
+        "date": "2024-02-11 07:59:42",
+        "metadata": {
+            "reviewId": "f67ce3de-9d79-426e-b42c-8b9c9336e7c1",
+            "userName": "Refferal Code- c13eo73",
+            "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjU-HI8_IaUZ5fkN9ZH_Yi74Vgtfy7iuBJIgYx6zbrSadA",
+            "content": "Google Pay is my go-to UPI app for all my digital transactions. It's incredibly user-friendly, allowing me to send and receive money effortlessly. The interface is intuitive, making navigation a breeze. What I appreciate most is its reliability; transactions are swift and secure. Plus, the app offers a range of services like bill payments and recharge options, making it a one-stop solution for all my financial needs. Highly recommended!",
+            "score": 5,
+            "thumbsUpCount": 4261,
+            "reviewCreatedVersion": "213.1.8 (arm64-v8a_release_flutter)",
+            "at": "2024-02-11 07:59:42",
+            "replyContent": null,
+            "repliedAt": "NaN",
+            "appVersion": "213.1.8 (arm64-v8a_release_flutter)",
+            "cou_lan": "in-en"
+        },
+        "subinfo": {},
+        "main_text": "Google Pay is my go-to UPI app for all my digital transactions. It's incredibly user-friendly, allowing me to send and receive money effortlessly. The interface is intuitive, making navigation a breeze. What I appreciate most is its reliability; transactions are swift and secure. Plus, the app offers a range of services like bill payments and recharge options, making it a one-stop solution for all my financial needs. Highly recommended!",
+        "attributes": {
+            "keywords": [
+                "None"
+            ],
+            "first_order_labels": [],
+            "second_order_labels": [
+                "other issues"
+            ],
+            "sentiment": "positive",
+            "priority": "Low",
+            "pricing": {
+                "is_pricing": "No",
+                "sentiment_of_current_pricing": "",
+                "satisfaction_of_users": "",
+                "worthiness_of_pricing": "",
+                "suggestions_on_pricing": ""
+            },
+            "feature_requests": {
+                "is_feature": "",
+                "suggetions_on_features": []
+            },
+            "positive_keywords": [],
+            "second_order_label_to_keywordlist": [
+                {
+                    "name": "other issues",
+                    "keywords": [
+                        "None"
+                    ]
+                }
+            ]
+        }
+    }
+]
