@@ -2,7 +2,7 @@ from common_imports import *
 from semantic_union import *
 from taggers_and_routers import *
 from custom_langchain_tools import *
-
+from google_play_scape_utils import *
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -92,12 +92,15 @@ def generate_full_app_descritpion(api_result_app, generic_raw_clusters, general_
     standard_app_description = standardize_app_description(api_result_app, summarized_app_description_list, first_order_to_sec_order_labels, second_order_label_to_multiqry)
     return standard_app_description
 
-
-
-
-
-
-
+def get_app_model(app_id, app_name, generic_raw_clusters, general_descripion, multi_qry_count_per_label):
+    loaded_api_result_app = fetch_app_description(app_id, app_name)
+    standard_app_description = generate_full_app_descritpion(
+        api_result_app = loaded_api_result_app,
+        generic_raw_clusters=generic_raw_clusters,
+        general_descripion=general_descripion,
+        multi_qry_count_per_label=multi_qry_count_per_label
+        )
+    return standard_app_description
 
 
 

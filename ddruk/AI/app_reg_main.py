@@ -2,7 +2,7 @@ from common_imports import *
 from semantic_union import *
 from utils import *
 from custom_langchain_tools import *
-from google_play_scape_utils import *
+
 
 if __name__ == "__main__":
     
@@ -46,6 +46,13 @@ if __name__ == "__main__":
         general_descripion=general_descripion,
         multi_qry_count_per_label=10
         )
+    
+    """
+    Alternative,
+
+    standard_app_description = get_app_model(APP_ID, APP_NAME, generic_raw_clusters, general_descripion, 10)
+    
+    """
     
     # Store the standardized app description
     with open(f"datas/standard_app_description_{standard_app_description['name']}_v{0}.json", 'w') as f:
