@@ -38,6 +38,8 @@ if __name__ == "__main__":
         'Issues related to premium features',
         'Issues related to Security and Privacy',
         ]
+    # for payment related issues
+    #  ['Bug Reports', 'Requesting for new features or limited feature', 'Issues related to Customer Support', ' Issues related to debit/credit cards compatibility','Issues related to Transaction failure','Issues related to Security and Privacy']
     general_descripion = "App reviews of a Music and Audio App"
 
     standard_app_description = generate_full_app_descritpion(
