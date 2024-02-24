@@ -17,6 +17,13 @@ if __name__ == "__main__":
     print("Tickets ..... ")
     print(tickets)
 
+    """
+    output format 
+    {
+        "first_order_label": ticket
+    }
+    """
+
     # Store the tickets
     with open('./datas/tickets_GooglePay_v0.json', 'w') as json_file:
         json.dump(tickets, json_file, indent=4)
