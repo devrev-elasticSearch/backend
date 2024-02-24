@@ -1,8 +1,8 @@
-from common_imports import *
-from semantic_union import *
-from utils import *
-from custom_langchain_tools import *
-from taggers_and_routers import *
+from .common_imports import *
+from .semantic_union import *
+from .utils import *
+from .custom_langchain_tools import *
+from .taggers_and_routers import *
 
 
 if __name__ == "__main__":

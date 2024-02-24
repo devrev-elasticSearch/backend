@@ -10,9 +10,12 @@ from VectorDb.InsightsModel import query as insightsQuery
 
 from VectorDb.AppModel import mapping as appMapping
 from VectorDb.AppModel import insert as appInsert
+from VectorDb.AppModel import query as appQuery
 
-from Integration.Denoiser import loop
+from Integration.DataModelCreator import loop
+from Integration.TicketGenerator import generator
 from datetime import datetime
+from AI import ticket_generation
 import json
 
 if __name__ == "__main__":
@@ -153,9 +156,12 @@ if __name__ == "__main__":
     # with open('dummy_datamodel.json', 'w') as outfile:
     #     json.dump(d, outfile)
     # dummyData = []    
-    # with open('dummy_datamodel.json') as json_file:
+    # with open('phase1_result_GooglePay_v0_0_500.json') as json_file:
     #     dummyData = json.load(json_file)
     
+    # for d in dummyData:
+    #     d['app_name'] = "Google Pay"
+    #     d['date'] = int(datetime.timestamp(datetime.strptime(d['date'],"%Y-%m-%d %H:%M:%S")))
     # dataInsert.bulkInsert(dummyData)
     # print(api.getAllRecords(dataMapping.dataIndexName))
     # api.deleteIndex(appMapping.appIndexName)
@@ -165,6 +171,13 @@ if __name__ == "__main__":
     # api.deleteAllRecords(appMapping.appIndexName)
     # api.deleteIndex(appMapping.appIndexName)
     # loop.loop()
-    loop.loop()
+    # print(dataQuery.queryForDataByFirstOrderLabelInPrevDays(dataQuery.queryMaxFirstOrderLabel(1000)))
+    # loop.loop()
+    # print(api.getAllRecords(dataMapping.dataIndexName) )
+    # firstOrderLabel = appQuery.queryRandomFirstOrderLabel()
+    # print(dataQuery.getRandomHighPriorityDataElementInLastDays(50000))
+    
+    generator.generateTickets()
+    #print(ticket_generation.issue_ticket_based_on_high_prio_v2(dataQuery.queryForDataByFirstOrderLabelInPrevDays(dataQuery.queryMaxFirstOrderLabel(1000)),dataQuery.queryMaxFirstOrderLabel(1000),1))
     print("hello")
 

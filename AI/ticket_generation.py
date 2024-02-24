@@ -1,5 +1,5 @@
-from common_imports import *
-from semantic_union import *
+from .common_imports import *
+from .semantic_union import *
 
 from dotenv import load_dotenv
 
@@ -106,7 +106,7 @@ def create_ticket(high_prio_review_list:list, common_label:str, urgent_frequency
 
 
 
-def issue_ticket_based_on_high_prio_v2(standad_phase1_result,count_cutoff=5,fixed_first_order_label="None"):
+def issue_ticket_based_on_high_prio_v2(standad_phase1_result,fixed_first_order_label="None",count_cutoff=5):
   freq = defaultdict(list)
   for _,_res in enumerate(standad_phase1_result):
     pri = standad_phase1_result[_]['attributes']['priority']
@@ -152,5 +152,7 @@ def issue_ticket_based_on_high_prio_v2(standad_phase1_result,count_cutoff=5,fixe
       common_first_order_label =  issue
       urgent_frequency = len(freq[issue])
       tickets[issue] = create_ticket(high_prio_review_list, common_first_order_label, urgent_frequency)
+      if ('title' not in tickets[issue].keys()) or (tickets[issue]['title']=="Ticket Title"):
+        tickets[issue]['title'] = common_first_order_label
 
   return tickets

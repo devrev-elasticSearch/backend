@@ -1,5 +1,5 @@
-from ticket_generation import *
-from common_imports import *
+from .ticket_generation import *
+from .common_imports import *
 
 if __name__ == "__main__":
     os.environ["OPENAI_API"]=getpass("Enter the OpenAI API Key: ")

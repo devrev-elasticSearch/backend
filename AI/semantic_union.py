@@ -1,5 +1,4 @@
-from common_imports import *
-from dotenv import load_dotenv
+from .common_imports import *
 
 load_dotenv()
 

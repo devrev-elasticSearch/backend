@@ -18,7 +18,7 @@ def queryInDateRange(start, end, indexName=dataIndexName):
             }
         }
     }
-    res = api.client.search(index=indexName, body=dataQuery, ignore=400)
+    res = api.client.search(index=indexName, body=dataQuery, ignore=400,size=1000)
     return getHitsFromResult(res)
 
 def queryByAppName(appName, indexName=dataIndexName):
@@ -29,7 +29,7 @@ def queryByAppName(appName, indexName=dataIndexName):
             }
         }
     }
-    res = api.client.search(index=indexName, body=dataQuery, ignore=400)
+    res = api.client.search(index=indexName, body=dataQuery, ignore=400,size=1000)
     return getHitsFromResult(res)
 
 def queryByIdList(indexName, idList):
@@ -40,9 +40,205 @@ def queryByIdList(indexName, idList):
             }
         }
     }
-    res = api.client.search(index=indexName, body=dataQuery, ignore=400)
+    res = api.client.search(index=indexName, body=dataQuery, ignore=400,size=1000)
     return getHitsFromResult(res)
 
+
+def queryFirstOrderLabelFrequency(prevDays=7,appName="Google Pay",indexName=dataIndexName):
+    dataQuery={
+        "size": 0,
+        "aggs": {
+            "first_order_label_frequency": {
+                "terms": {
+                    "field": "attributes.first_order_labels",
+                    "size": 100
+                }
+            }
+        },
+        "query": {
+            "bool":{
+                "must":[
+                    {
+                        "range": {
+                            "date": {
+                                "gte": "now-{}d/d".format(prevDays),
+                                "lte": "now/d"
+                            }
+                        }
+                    },
+                    {
+                        "term": {
+                            "app_name": appName
+                        }
+                    }
+                ]
+            
+            }
+        }
+    }
+    res = api.client.search(index=indexName, body=dataQuery, ignore=400,size=1000)
+    return res["aggregations"]["first_order_label_frequency"]["buckets"]
+
+def queryMaxFirstOrderLabel(prevDays=7, appName="Google Pay",indexName=dataIndexName):
+    dataQuery={
+        "size": 0,
+        "aggs": {
+            "first_order_label_max": {
+                "terms": {
+                    "field": "attributes.first_order_labels",
+                    "size": 1
+                }
+            }
+        },
+        "query": {
+            "bool":{
+                "must":[
+                    {
+                        "range": {
+                            "date": {
+                                "gte": "now-{}d/d".format(prevDays),
+                                "lte": "now/d"
+                            }
+                        }
+                    },
+                    {
+                        "term": {
+                            "app_name": appName
+                        }
+                    }
+                ]
+            
+            }
+        }
+    }
+    res = api.client.search(index=indexName, body=dataQuery, ignore=400,size=1000)
+    return res["aggregations"]["first_order_label_max"]["buckets"][0]["key"]
+
+def queryForDataByFirstOrderLabelInPrevDays(firstOrderLabel, prevDays=7, maxNum=3,appName="Google Pay",indexName=dataIndexName):
+    #sort by date
+
+    dataQuery={
+        "size": maxNum,
+        "query": {
+            "bool": {
+                "must": [
+                    {
+                        "range": {
+                            "date": {
+                                "gte": "now-{}d/d".format(prevDays),
+                                "lte": "now/d"
+                            }
+                        }
+                    },
+                    {
+                        "term": {
+                            "attributes.first_order_labels": firstOrderLabel,
+                        }
+                    },
+                    {
+                        "term": {
+                            "app_name": appName
+                        }
+                    }
+                ]
+            },
+        },
+        "sort": [
+            {
+                "date": {
+                    "order": "desc"
+                }
+            }
+        ]
+    }
+    res = api.client.search(index=indexName, body=dataQuery, ignore=400,size=1000)
+    return  [x['_source'] for x in getHitsFromResult(res)]
+
+def getRandomHighPriorityDataElementInLastDaysByLabel(first_order_labels,days=7,appName="Google",indexName=dataIndexName):
+    dataQuery={
+        "size": 1,
+        "query": {
+            "bool": {
+                "must": [
+                    {
+                        "range": {
+                            "date": {
+                                "gte": "now-{}d/d".format(days),
+                                "lte": "now/d"
+                            }
+                        }
+                    },
+                    {
+                        "term": {
+                            "attributes.first_order_labels": first_order_labels,
+                        }
+                    },
+                    {
+                        "term": {
+                            "app_name": appName
+                        }
+                    },
+                    {
+                        "term": {
+                            "attributes.priority": "High"
+                        }
+                    }
+                ]
+            },
+        },
+        "sort": [
+            {
+                "date": {
+                    "order": "desc"
+                }
+            }
+        ]
+    }
+    res = api.client.search(index=indexName, body=dataQuery, ignore=400,size=1000)
+    return  [x['_source'] for x in getHitsFromResult(res)]
+
+def getRandomHighPriorityDataElementInLastDays(days=7,appName="Google Pay",indexName=dataIndexName):
+    dataQuery={
+        "size": 5,
+        "query": {
+            "bool": {
+                "must": [
+                    {
+                        "range": {
+                            "date": {
+                                "gte": "now-{}d/d".format(days),
+                                "lte": "now/d"
+                            }
+                        }
+                    },
+                    {
+                        "term": {
+                            "app_name": appName
+                        }
+                    },
+                    {
+                        "term": {
+                            "attributes.priority": "High"
+                        }
+                    }
+                ]
+            },
+        },
+        "sort": [
+            {
+                "_script": {
+                    "type": "number",
+                    "script": {
+                        "lang": "painless",
+                        "source": "Math.random()"
+                    },
+                    "order": "asc"
+                }
+            }
+        ]
+    }
+    res = api.client.search(index=indexName, body=dataQuery, ignore=400,size=1000)
+    return  [x['_source'] for x in getHitsFromResult(res)]
 
 def queryByKnnSparseVector(vector, k=1, indexName=dataIndexName):
     #define script for cosine similarity
@@ -67,7 +263,7 @@ def queryByKnnSparseVector(vector, k=1, indexName=dataIndexName):
     }
 
     #execute query
-    res = api.client.search(index=indexName, body=dataQuery, ignore=400)
+    res = api.client.search(index=indexName, body=dataQuery, ignore=400,size=1000)
     return getHitsFromResult(res)
 
 def queryByFirstOrderLabel(indexName, firstOrderLabel):
@@ -78,7 +274,7 @@ def queryByFirstOrderLabel(indexName, firstOrderLabel):
             }
         }
     }
-    res = api.client.search(index=indexName, body=dataQuery, ignore=400)
+    res = api.client.search(index=indexName, body=dataQuery, ignore=400,size=1000)
     return getHitsFromResult(res)
 
 def queryBySentiment(indexName, sentiment):
@@ -89,7 +285,7 @@ def queryBySentiment(indexName, sentiment):
             }
         }
     }
-    res = api.client.search(index=indexName, body=dataQuery, ignore=400)
+    res = api.client.search(index=indexName, body=dataQuery, ignore=400,size=1000)
     return getHitsFromResult(res)
 
 def queryByPriority(priority, indexName=dataIndexName):
@@ -100,7 +296,7 @@ def queryByPriority(priority, indexName=dataIndexName):
             }
         }
     }
-    res = api.client.search(index=indexName, body=dataQuery, ignore=400)
+    res = api.client.search(index=indexName, body=dataQuery, ignore=400,size=1000)
     return getHitsFromResult(res)
 
 
@@ -181,12 +377,12 @@ class QueryBuilder:
             self.addTermQuery("app_name", values["app_name"])
 
     def execute(self):
-        res = api.client.search(index=self.indexName, body=self.query, ignore=400)
+        res = api.client.search(index=self.indexName, body=self.query, ignore=400,size=1000)
         return getHitsFromResult(res)
     
 
     def executeWithKnn(self,vector,k=1):
-        res = api.client.search(index=self.indexName, body=self.query, ignore=400)
+        res = api.client.search(index=self.indexName, body=self.query, ignore=400,size=1000)
         idList = [hit["_id"] for hit in getHitsFromResult(res)]
 
         if len(idList) == 0:
@@ -213,6 +409,9 @@ class QueryBuilder:
             }
         }
 
-        res = api.client.search(index=self.indexName, body=dataQuery, ignore=400)
+        res = api.client.search(index=self.indexName, body=dataQuery, ignore=400,size=1000)
         return getHitsFromResult(res)
+    
+
+
 

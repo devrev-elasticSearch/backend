@@ -1,5 +1,5 @@
-from common_imports import *
-from semantic_union import *
+from .common_imports import *
+from .semantic_union import *
 
 from dotenv import load_dotenv
 
