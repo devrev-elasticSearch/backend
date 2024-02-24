@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 from VectorDb.AppModel import query as appQuery
 from VectorDb.DataModel import query as dataQuery
 import json
+from AI import utils
 from VectorDb.AppModel import insert as appInsert
 
 
@@ -70,6 +71,19 @@ def getall():
             temp[arr["name"]] = arr["keywords"]
         data['attributes']["second_order_labels"] = temp
     return jsonify(res)
+
+@app.route('/api/app/appmodel/getdata',methods=['POST'])
+def getappModel():
+    body = getBodyFromRequest(request)
+    if(body == None):
+        return jsonify({"error": "Invalid request"}), 400
+    if("app_name" not in body):
+        return jsonify({"error": "Invalid request"}), 400
+    appName = body["app_name"]
+    appId = body["app_id"]
+    res = utils.get_app_model(appId,appName)
+    return jsonify(res)
+
 
 '''
 Can add filters

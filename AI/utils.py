@@ -84,7 +84,8 @@ def generate_full_app_descritpion(api_result_app, generic_raw_clusters, general_
 
     # MultiQry for second order labels
     second_order_labels = list(sec_order_to_first_order_labels.keys())
-    second_order_label_to_multiqry = gen_second_order_label_to_multiqry(second_order_labels, general_descripion = general_descripion, count_per_label = multi_qry_count_per_label)
+    second_order_label_to_multiqry = {}
+    # second_order_label_to_multiqry = gen_second_order_label_to_multiqry(second_order_labels, general_descripion = general_descripion, count_per_label = multi_qry_count_per_label)
 
     print("-----------------------------------second_order_label_to_multiqry -----------------------------------")
     print(second_order_label_to_multiqry)
