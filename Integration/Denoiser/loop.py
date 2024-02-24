@@ -21,5 +21,5 @@ def callback(message):
     print(publishList)
 
 
-def loop(timeInMinutes=10,numMessages=1):
+def loop(timeInMinutes=2,numMessages=1):
     sqs.loop(snapInQueueUrl,timeInMinutes,numMessages,callback)

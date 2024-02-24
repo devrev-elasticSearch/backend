@@ -15,7 +15,15 @@ dataMapping = {
                 "second_order_labels":{"type":"keyword"},
                 "sentiment":{"type":"keyword"},
                 "priority":{"type":"keyword"},
-                "pricing":{"type":"object"}
+                "pricing":{"type":"object"},
+                "feature_requests":{"type":"object"},
+                "positive_keywords":{"type":"keyword"},
+                "second_order_label_to_keywordlist":{
+                    "properties":{
+                        "name":{"type":"keyword"},
+                        "keywords":{"type":"keyword"}
+                    }
+                }
             }
         }
     }

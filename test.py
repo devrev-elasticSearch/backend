@@ -125,23 +125,34 @@ if __name__ == "__main__":
     #     data=dummyData[key]
     #     temp=dict()
     #     unixTimestamp = int(datetime.timestamp(datetime.strptime(data['other_metadata_dict']["at"],"%Y-%m-%d %H:%M:%S")))
+
+    #     lis = []
+
+    #     if 'label_to_keylist' in data['second_order_labels'].keys():
+    #         for key in data['second_order_labels']['label_to_keylist'].keys():
+    #             temp1 = dict()
+    #             temp1['name'] = key
+    #             temp1['keywords'] = data['second_order_labels']['label_to_keylist'][key]
+    #             lis.append(temp1)
+
     #     temp["app_name"]="Google Pay"
-    #     temp["date"]=unixTimestamp,
+    #     temp["date"]=unixTimestamp
     #     temp["main_text"]=data['other_metadata_dict']['content']
     #     temp["attributes"]={
     #         "keywords":data["keywords"],
     #         "first_order_labels":data["first_order_labels"]["label_list"],
     #         "second_order_labels":data["second_order_labels"]["label_list"],
     #         "sentiment":data["tagging_metadata"]["sentiment"],
-    #         "priority":data["tagging_metadata"]["priority"]
+    #         "priority":data["tagging_metadata"]["priority"],
+    #         "second_order_label_to_keywordlist":lis
     #     }
     #     temp["metadata"]=data["other_metadata_dict"]
+
     #     d.append(temp)
 
     # with open('dummy_datamodel.json', 'w') as outfile:
     #     json.dump(d, outfile)
-
-    # dummyData = []
+    # dummyData = []    
     # with open('dummy_datamodel.json') as json_file:
     #     dummyData = json.load(json_file)
     
@@ -153,5 +164,7 @@ if __name__ == "__main__":
     # api.deleteAllRecords(dataMapping.dataIndexName)
     # api.deleteAllRecords(appMapping.appIndexName)
     # api.deleteIndex(appMapping.appIndexName)
+    # loop.loop()
+    loop.loop()
     print("hello")
 
