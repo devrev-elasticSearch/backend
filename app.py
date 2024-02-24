@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 from VectorDb.AppModel import query as appQuery
 from VectorDb.DataModel import query as dataQuery
 import json
+from VectorDb.AppModel import insert as appInsert
 
 
 app = Flask(__name__)
@@ -97,6 +98,22 @@ def filterDataModel():
     res = queryBuilder.execute()
 
     res = [x["_source"] for x in res]
+    return jsonify(res)
+
+
+@app.route('/api/app/appmodel/insert',methods=['POST'])
+def insertAppModel():
+    body = getBodyFromRequest(request)
+    if(body == None):
+        return jsonify({"error": "Invalid request"}), 400
+    appInsert.insertAppData(body)
+    return jsonify({"success": "Data inserted"})
+
+
+@app.route('/api/app/appmodel/appnames',methods=['GET'])
+def getAppNames():
+    res = appQuery.queryUniqueAppNames()
+    res = [x["key"] for x in res]
     return jsonify(res)
 
 

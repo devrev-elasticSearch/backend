@@ -21,6 +21,19 @@ def queryByAppName(appName, indexName=appIndexName):
     res = api.client.search(index=indexName, body=dataQuery, ignore=400)
     return getHitsFromResult(res)
 
+def queryUniqueAppNames(indexName=appIndexName):
+    dataQuery={
+        "size": 0,
+        "aggs": {
+            "unique_app_names": {
+                "terms": {
+                    "field": "name"
+                }
+            }
+        }
+    }
+    res = api.client.search(index=indexName, body=dataQuery, ignore=400)
+    return res["aggregations"]["unique_app_names"]["buckets"]
 
 def queryRandomFirstOrderLabel(appName="Google Pay",indexName=appIndexName):
     dataQuery={
