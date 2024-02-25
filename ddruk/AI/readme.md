@@ -10,7 +10,7 @@ When the target app is registered, the related description of that app is fetche
 
 `create_first_order_labels/utils.py` converts these "2nd Order Issue Labels" which are then grouped into less numbered "1st Order Issue Labels". Here, our custom-built `group_similar_strings/semantic_union.py` (OpenAI's 'text-embedding-ada-002' embedding-based O(n) algorithm) and `assign_title_to_groups/semantic_union.py` (custom LangChain agent) help to group and name these "1st Order Issue Labels".
 
-<img src="https://drive.google.com/uc?export=view&id=1fglg5Uy2d78XLZdBQh5xdhPD2cNLSIoo" alt="Multi Query generation" width="600" height="300">
+<img src="https://drive.google.com/uc?export=view&id=1fglg5Uy2d78XLZdBQh5xdhPD2cNLSIoo" alt="Multi Query generation" width="700" height="300">
 
 
 `gen_second_order_label_to_multiqry/custom_langchain_tools.py` generates different Multi Queries for each "2nd Order Issue Labels". It helps the semantic router to build a robust semantic sense for each route or issue label.
