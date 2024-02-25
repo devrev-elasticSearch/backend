@@ -69,7 +69,7 @@ This is done to integrate this functionality with our custom dashboard
 
 ## Running the app
 
-```Python
+```python
 pip3 install requirements.txt
 python3 app.py
 python3 run.py
