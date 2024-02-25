@@ -4,6 +4,7 @@ from Integration.Denoiser import loop as denoiserLoop
 from Integration.TicketGenerator import generator as ticketGenerator
 from multiprocessing import Process
 import json
+from VectorDb.AppModel import insert,query
 
 
 if __name__ == "__main__":
@@ -32,5 +33,6 @@ if __name__ == "__main__":
             p.terminate()
             p.join()
     
-    
+    print(query.queryUniqueAppNames())
     print("hello")
+    

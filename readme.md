@@ -78,8 +78,8 @@ This is done to integrate this functionality with our custom dashboard
 
 ## Running the app
 
-```python
-pip3 install requirements.txt
+```bash
+pip3 install -r requirements.txt
 python3 app.py
 python3 run.py
 ```
