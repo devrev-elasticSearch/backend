@@ -71,7 +71,7 @@ After coming through 'SpamFilter' and 'Translator', the reviews enter the AI pip
 The whole pipeline runs in `run_phase1/utils.py`.
 
 ### The output schema:
-```json
+```python
 [
     {
         "app_name": "PhonePe",
