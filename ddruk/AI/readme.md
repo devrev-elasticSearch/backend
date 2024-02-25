@@ -47,7 +47,7 @@ The whole pipeline runs in `run_phase1/utils.py`.
 - Sample app description fetched from API: `datas/api_result_appdescr_PhonePe.json`  
 - Sample output after App-Registration Pipeline: `datas/standard_app_description_PhonePe_v0.json`  
 - Sample output after Routing-Based-Soft-Clustering Pipeline: `datas/phase1_result_PhonePe_v0_0_100.json`  
-- Sample generated ticekt: `datas/tickets_GooglePay_v0.json`
+- Sample generated ticket: `datas/tickets_GooglePay_v0.json`
 
 # Discussions
 1. The abstract is to break down the whole review into multiple different phrases and then assign it to multiple categories, rather than digesting the whole text at once and assigning multiple categories. The two-step process helps in better performance.
