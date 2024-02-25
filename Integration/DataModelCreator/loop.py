@@ -8,7 +8,7 @@ import os
 load_dotenv()
 
 rawDataQueueUrl = os.getenv("rawDataQueueUrl")
-dataQueueUrl  = os.getenv("dataQueueUrl")
+# dataQueueUrl  = os.getenv("dataQueueUrl")
 
 def callback(messages,appName="Google Pay"):
     appData = appQuery.queryByAppName(appName)[0]["_source"]
@@ -19,7 +19,7 @@ def callback(messages,appName="Google Pay"):
         print("Not publishing today")
         return
     
-    sqs.publishToSqsQueue(dataQueueUrl, returnData)
+    # sqs.publishToSqsQueue(dataQueueUrl, returnData)
     dataInsert.bulkInsert(returnData)
     print(returnData)
 
