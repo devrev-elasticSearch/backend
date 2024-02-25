@@ -45,11 +45,12 @@ The whole pipeline runs in `run_phase1/utils.py`.
 
 
 # Discussions
-The abstract is to break down the whole review into muliple different phrases and then assigning it to multple categories. Rather than, digesting the whole text at time and assigning multple categories. The two step proceess helps in better performance. 
+1. The abstract is to break down the whole review into multiple different phrases and then assign it to multiple categories, rather than digesting the whole text at once and assigning multiple categories. The two-step process helps in better performance.
 
-1. Scalable : 
-    The clustering labels are AI genearted and also can consist user defined. So, we can as many as labels.
-    We can add as many as routes and tagging chains.
-    As we are not depended on a single high temoperature and large prompt, the chances of LLM halucaination is vey much mitigated. So, no need to change the prompts to handle differnt types of app cateory. 
-    SEO and AdIsight
-2.  
+2. Scalable:
+    The clustering labels are AI-generated and can also consist of user-defined labels. So, we can have as many labels as needed.
+    We can add as many routes and tagging chains as required.
+    As we are not dependent on a single high temperature and large prompt, the chances of LLM hallucination are greatly mitigated. So, there is no need to change the prompts to handle different types of app categories.
+
+3. SEO and AdInsight: We can use the positive phrases from the inputs to improve Search Engine Optimization and Ad-Insight.
+
