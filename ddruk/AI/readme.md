@@ -25,7 +25,7 @@ We used ["Aurelio AI"](www.aurelio.ai)'s "Semantic Router" powered by [OpenAI](o
 
 We create `create_phase1_classif_tagger/taggers_and_routers.py`, where the sentiment and priority are extracted from the review text using OpenAI-function call-based "Tagging" chain. `get_price_sentiment` and `get_feature_suggestions`, ["Tagging"](python.langchain.com/docs/use_cases/tagging) are ["Extraction"](python.langchain.com/docs/use_cases/extraction) chains, operate when "price_route" and "feature_suggestion" route is active. Note: these two routes are optional.
 
-<img src="https://drive.google.com/uc?export=view&id=1ZbIRwpUSeYYC9SnZ3M-eKdRtQrVrtJ5r" alt="Example" width="700" height="500">
+<img src="https://drive.google.com/uc?export=view&id=1ZbIRwpUSeYYC9SnZ3M-eKdRtQrVrtJ5r" alt="Example" width="700" height="550">
 
 After coming through 'SpamFilter' and 'Translator', the reviews enter the AI pipeline. The reviews may be grouped together using `TikTokenUtil/chunker.py`. Then they pass through another LangChain agent present in `key_word_extractor/custom_langchain_tools.py`. It reads the full text and breaks them into separate lists consisting of "positive phrase list" and "negative phrase list". All elements in the "negative phrase list" are then routed through the existing routers. If any review contains multiple different negative aspects (e.g., issues regarding RuPay card, problems with UPI ID, etc.), it is routed to different routers at a time. Hence, each review is labeled with multiple "2nd Order Issue Labels", achieving the aspect of soft clustering.
 
