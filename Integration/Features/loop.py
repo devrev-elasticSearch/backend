@@ -14,4 +14,4 @@ def callback(message):
     print("Inserted")
     
 def loop():
-    sqs.loop(queueUrl, callback=callback, timeInMinutes=1,delete=False)
+    sqs.loop(queueUrl, callback=callback, timeInMinutes=1,delete=True)
