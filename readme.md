@@ -69,11 +69,11 @@ This is done to integrate this functionality with our custom dashboard
 
 ## Running the app
 
-'''Python
+```Python
 pip3 install requirements.txt
 python3 app.py
 python3 run.py
-'''
+```
 
 app.py is the flask server for communication with the backend
 run.py forks 4 processes for each of the four major parts of the backend and run the entire pipeline
