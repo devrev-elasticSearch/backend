@@ -37,6 +37,8 @@ From the three data source snap ins the data is published to a message queue, th
 The denoiser function polls this queue, processes the messages, and publishes the data to a raw data queue,
 The clustering function polls this queue, and clusters this data into multiple first and secord order labels which are extracted during the app registration page. The processed data is written to a database.
 
+The Denoiser function translates the text into english using the Google Translate Api. Thena check is applied on the number of non ascii characters remaning as well as the number of spelling errors. Based on the the review is accepted or rejected
+
 The ticket generation function periodically queries this database for high priority reviews, grouped by first order clusters. Multiple such rviews are then merged to create a ticket that is published on the ticket queue.
 
 A snap in registered on the devrev platform, polls by queue when a command is invoked and creates the tickets on the devrev platform.
