@@ -19,7 +19,7 @@ When the target app is registered, the related description of that app is fetche
 
 ## Routing-Based-Soft-Clustering Pipeline
 
-<img src="https://drive.google.com/uc?export=view&id=1uMLg8ImAHGrmgaTF08M7XIfEcfUieIyc" alt="Routing" width="600" height="400">
+<img src="https://drive.google.com/uc?export=view&id=1hT20HczrdmBZ9tY8EVyBX5vRvDJPuGd6" alt="Routing" width="600" height="400">
 
 We used ["Aurelio AI"](www.aurelio.ai)'s "Semantic Router" powered by [OpenAI](openai.com)'s 'text-embedding-ada-002' Embedding. This routing layer is a very fast and efficient way to route the input text to respective routes. In `get_routelayer_for_second_order_layer/taggers_and_routers.py`, we build these routes based on each "2nd Order Issue Labels" using the multi queries generated previously. If any input text does not fall into existing routes, it goes into the "None" route.
 
