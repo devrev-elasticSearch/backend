@@ -67,5 +67,16 @@ using the ticket_creator_snap_in
 This loop monitors for feature requests for a a group or organization specified by hashtags on the other_features_snap_in, for a payment application this would include hashtags for a multiple organizations in the upi and payment space like Google/Apple/Amazon Pay. where the associated command is called on the snap in, the tickets are created on the Devrev platform, the requests are also published to the queue which is listed for here.
 This is done to integrate this functionality with our custom dashboard
 
+## Running the app
+
+'''Python
+pip3 install requirements.txt
+python3 app.py
+python3 run.py
+'''
+
+app.py is the flask server for communication with the backend
+run.py forks 4 processes for each of the four major parts of the backend and run the entire pipeline
+
 ### Information on specific subfolders and .env file setup can be found within the folders themselves
 ### Information on AI can be found in the AI folder
