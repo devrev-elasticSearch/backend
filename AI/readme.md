@@ -70,6 +70,75 @@ After coming through 'SpamFilter' and 'Translator', the reviews enter the AI pip
 
 The whole pipeline runs in `run_phase1/utils.py`.
 
+### The output schema:
+```json
+[
+    {
+        "app_name": "PhonePe",
+        "id": "<The ID for review>",
+        "date": "2024-02-22 10:58:45",
+        "metadata": {
+            "reviewId": "<The Review ID>",
+            "userName": "<User Name>",
+            "userImage": "<User Image URL>",
+            "content": "<Review Content>",
+            "score": 5,
+            "thumbsUpCount": 18876,
+            "reviewCreatedVersion": "<App Version>",
+            "at": "2024-02-22 10:58:45",
+            "replyContent": null,
+            "repliedAt": "NaN",
+            "appVersion": "<App Version>",
+            "cou_lan": "<Language Code>"
+        },
+        "subinfo": {},
+        "main_text": "<Review Main Text>",
+        "attributes": {
+            "keywords": [
+                "Referal is not that helpful",
+                "keyboard does not pop up"
+            ],
+            "first_order_labels": [
+                "Issues related to Refer friends and earn rewards"
+            ],
+            "second_order_labels": [
+                "Issues related to Refer friends and earn rewards",
+                "other issues"
+            ],
+            "sentiment": "<Sentiment>",
+            "priority": "<Priority>",
+            "pricing": {
+                "is_pricing": "<Is Pricing>",
+                "sentiment_of_current_pricing": "<Sentiment of Current Pricing>",
+                "satisfaction_of_users": "<Satisfaction of Users>",
+                "worthiness_of_pricing": "<Worthiness of Pricing>",
+                "suggestions_on_pricing": "<Suggestions on Pricing>"
+            },
+            "feature_requests": {
+                "is_feature_suggestion": "<Is Feature Suggestion>",
+                "suggetions_on_features": []
+            },
+            "positive_keywords": [],
+            "second_order_label_to_keywordlist": [
+                {
+                    "name": "other issues",
+                    "keywords": [
+                        "keyboard does not pop up"
+                    ]
+                },
+                {
+                    "name": "Issues related to Refer friends and earn rewards",
+                    "keywords": [
+                        "Referal is not that helpful"
+                    ]
+                }
+            ]
+        }
+    },
+    ...
+]
+```
+
 ### Models and Thresholds
 
 - LLM used: gpt-3.5-turbo-0613
