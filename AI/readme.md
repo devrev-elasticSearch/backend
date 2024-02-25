@@ -8,7 +8,7 @@ Our AI-powered pipeline runs in two phases. When a new app is registered for the
 
 When the target app is registered, the related description of that app is fetched from the Play Store or similar platforms by the function `fetch_app_description/google_play_scape_utils.py`. 
 
-A custom <a href="www.langchain.com">LangChain</a> agent `convert_app_description_to_summary_list/custom_langchain_tools.py` converts the app description into a list of Technical Features. These are concatenated with the phrase "Issue related to", along with these we allow users to set Custom Issue Labels, forming the "2nd Order Issue Labels".
+A custom <a href="https://www.langchain.com">LangChain</a> agent `convert_app_description_to_summary_list/custom_langchain_tools.py` converts the app description into a list of Technical Features. These are concatenated with the phrase "Issue related to", along with these we allow users to set Custom Issue Labels, forming the "2nd Order Issue Labels".
 
 `create_first_order_labels/utils.py` converts these "2nd Order Issue Labels" which are then grouped into less numbered "1st Order Issue Labels". Here, our custom-built `group_similar_strings/semantic_union.py` (OpenAI's 'text-embedding-ada-002' embedding-based O(n) algorithm) and `assign_title_to_groups/semantic_union.py` (custom LangChain agent) help to group and name these "1st Order Issue Labels".
 
