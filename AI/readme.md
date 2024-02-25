@@ -62,9 +62,9 @@ A custom <a href="https://www.langchain.com">LangChain</a> agent `convert_app_de
 
 <img src="https://drive.google.com/uc?export=view&id=1hT20HczrdmBZ9tY8EVyBX5vRvDJPuGd6" alt="Routing" width="600" height="400">
 
-We used <a href="www.aurelio.ai">"Aurelio AI"</a>'s "Semantic Router" powered by <a href="openai.com">OpenAI</a>'s 'text-embedding-ada-002' Embedding. This routing layer is a very fast and efficient way to route the input text to respective routes. In `get_routelayer_for_second_order_layer/taggers_and_routers.py`, we build these routes based on each "2nd Order Issue Labels" using the multi queries generated previously. If any input text does not fall into existing routes, it goes into the "None" route.
+We used <a href="https://www.aurelio.ai">"Aurelio AI"</a>'s "Semantic Router" powered by <a href="https://openai.com">OpenAI</a>'s 'text-embedding-ada-002' Embedding. This routing layer is a very fast and efficient way to route the input text to respective routes. In `get_routelayer_for_second_order_layer/taggers_and_routers.py`, we build these routes based on each "2nd Order Issue Labels" using the multi queries generated previously. If any input text does not fall into existing routes, it goes into the "None" route.
 
-We create `create_phase1_classif_tagger/taggers_and_routers.py`, where the sentiment and priority are extracted from the review text using OpenAI-function call-based "Tagging" chain. `get_price_sentiment` and `get_feature_suggestions`, ["Tagging"](python.langchain.com/docs/use_cases/tagging) and ["Extraction"](python.langchain.com/docs/use_cases/extraction) chains, operate when "price_route" and "feature_suggestion" route is active. Note: these two routes are optional.
+We create `create_phase1_classif_tagger/taggers_and_routers.py`, where the sentiment and priority are extracted from the review text using OpenAI-function call-based "Tagging" chain. `get_price_sentiment` and `get_feature_suggestions`, ["Tagging"](https://python.langchain.com/docs/use_cases/tagging) and ["Extraction"](https://python.langchain.com/docs/use_cases/extraction) chains, operate when "price_route" and "feature_suggestion" route is active. Note: these two routes are optional.
 
 <img src="https://drive.google.com/uc?export=view&id=1ZbIRwpUSeYYC9SnZ3M-eKdRtQrVrtJ5r" alt="Example" width="700" height="550">
 
