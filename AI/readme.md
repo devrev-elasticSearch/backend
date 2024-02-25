@@ -4,7 +4,11 @@ Our AI-powered pipeline runs in two phases. When a new app is registered for the
 
 ## App-Registration Pipeline
 
-<img src="https://drive.google.com/uc?export=view&id=1Tmr-QFIyJpvw12uqSTnuuQcYlwZilpxZ" alt="App Registration" width="600" height="500">
+<a>
+  <img src='[image link](https://drive.google.com/uc?export=view&id=1Tmr-QFIyJpvw12uqSTnuuQcYlwZilpxZ)' width="600" height="500">
+  <div style='width: 130px; text-align: center;'>App Registration</div>
+</a>
+<!-- <img src="https://drive.google.com/uc?export=view&id=1Tmr-QFIyJpvw12uqSTnuuQcYlwZilpxZ" alt="App Registration" width="600" height="500"> -->
 
 When the target app is registered, the related description of that app is fetched from the Play Store or similar platforms by the function `fetch_app_description/google_play_scape_utils.py`. 
 
