@@ -1,6 +1,6 @@
 # AI Backend
 
-Our AI-powered pipeline runs in two phases. When a new app is registered for the first time, the "App-Registration" pipeline comes into play. The pipeline output for each app is stored in the database. Later, the "Routing-Based-Soft-Clustering" pipeline clusters (routes) the reviews (or the group of reviews) into various 2nd order issue labels through Semantic Routing.
+Our AI-powered pipeline runs in two phases. When a new app is registered for the first time, the "App-Registration" pipeline comes into play. The pipeline output for each app (which includes description_list, first_order_labels, generated_qrys_for_sec_labels, etc.) is stored in the database. Later, the "Routing-Based-Soft-Clustering" pipeline clusters (routes) the reviews (or the group of reviews) into various 2nd order issue labels through Semantic Routing.
 
 ## App-Registration Pipeline
 
