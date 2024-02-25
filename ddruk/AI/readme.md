@@ -6,7 +6,7 @@ Our AI-powered pipeline runs in two phases. When a new app is registered for the
 
 <img src="https://drive.google.com/uc?export=view&id=1Tmr-QFIyJpvw12uqSTnuuQcYlwZilpxZ" alt="App Registration" width="600" height="500">
 
-When the target app is registered, the related description of that app is fetched from the Play Store or similar by the function `fetch_app_description/google_play_scape_utils.py`. A custom LangChain agent `convert_app_description_to_summary_list/custom_langchain_tools.py` converts the app description into a list of Technical Features. These are concatenated with "Issue related to" along with some Custom User Issue Labels, forming the "2nd Order Issue Labels".
+When the target app is registered, the related description of that app is fetched from the Play Store or similar by the function `fetch_app_description/google_play_scape_utils.py`. A custom [LangChain](www.langchain.com) agent `convert_app_description_to_summary_list/custom_langchain_tools.py` converts the app description into a list of Technical Features. These are concatenated with "Issue related to" along with some Custom User Issue Labels, forming the "2nd Order Issue Labels".
 
 `create_first_order_labels/utils.py` converts these "2nd Order Issue Labels" which are then grouped into less numbered "1st Order Issue Labels". Here, our custom-built `group_similar_strings/semantic_union.py` (OpenAI's 'text-embedding-ada-002' embedding-based O(n) algorithm) and `assign_title_to_groups/semantic_union.py` (custom LangChain agent) help to group and name these "1st Order Issue Labels".
 
@@ -19,13 +19,13 @@ When the target app is registered, the related description of that app is fetche
 
 ## Routing-Based-Soft-Clustering Pipeline
 
-![Add picture]
+<img src="https://drive.google.com/uc?export=view&id=1uMLg8ImAHGrmgaTF08M7XIfEcfUieIyc" alt="Routing" width="600" height="500">
 
-We used "Aurelio AI"'s "Semantic Router" powered by OpenAI's 'text-embedding-ada-002' Embedding. This routing layer is a very fast and efficient way to route the input text to respective routes. In `get_routelayer_for_second_order_layer/taggers_and_routers.py`, we build these routes based on each "2nd Order Issue Labels" using the multi queries generated previously. If any input text does not fall into existing routes, it goes into the "None" route.
+We used ["Aurelio AI"](www.aurelio.ai)'s "Semantic Router" powered by [OpenAI](openai.com)'s 'text-embedding-ada-002' Embedding. This routing layer is a very fast and efficient way to route the input text to respective routes. In `get_routelayer_for_second_order_layer/taggers_and_routers.py`, we build these routes based on each "2nd Order Issue Labels" using the multi queries generated previously. If any input text does not fall into existing routes, it goes into the "None" route.
 
-We create `create_phase1_classif_tagger/taggers_and_routers.py`, where the sentiment and priority are extracted from the review text using OpenAI-function call-based "Tagging" chain. `get_price_sentiment` and `get_feature_suggestions`, "Tagging" are "Extraction" chains, operate when "price_route" and "feature_suggestion" route is active. Note: these two routes are optional.
+We create `create_phase1_classif_tagger/taggers_and_routers.py`, where the sentiment and priority are extracted from the review text using OpenAI-function call-based "Tagging" chain. `get_price_sentiment` and `get_feature_suggestions`, ["Tagging"](python.langchain.com/docs/use_cases/tagging) are ["Extraction"](python.langchain.com/docs/use_cases/extraction) chains, operate when "price_route" and "feature_suggestion" route is active. Note: these two routes are optional.
 
-![Add picture]
+<img src="https://drive.google.com/uc?export=view&id=1ZbIRwpUSeYYC9SnZ3M-eKdRtQrVrtJ5r" alt="Example" width="600" height="500">
 
 After coming through 'SpamFilter' and 'Translator', the reviews enter the AI pipeline. The reviews may be grouped together using `TikTokenUtil/chunker.py`. Then they pass through another LangChain agent present in `key_word_extractor/custom_langchain_tools.py`. It reads the full text and breaks them into separate lists consisting of "positive phrase list" and "negative phrase list". All elements in the "negative phrase list" are then routed through the existing routers. If any review contains multiple different negative aspects (e.g., issues regarding RuPay card, problems with UPI ID, etc.), it is routed to different routers at a time. Hence, each review is labeled with multiple "2nd Order Issue Labels", achieving the aspect of soft clustering.
 
