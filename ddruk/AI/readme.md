@@ -4,7 +4,7 @@ Our AI-powered pipeline runs in two phases. When a new app is registered for the
 
 ## App-Registration Pipeline
 
-![Add picture]
+![App-Registration][![image](https://drive.google.com/uc?export=view&id=1Tmr-QFIyJpvw12uqSTnuuQcYlwZilpxZ)]
 
 When the target app is registered, the related description of that app is fetched from the Play Store or similar by the function `fetch_app_description/google_play_scape_utils.py`. A custom LangChain agent `convert_app_description_to_summary_list/custom_langchain_tools.py` converts the app description into a list of Technical Features. These are concatenated with "Issue related to" along with some Custom User Issue Labels, forming the "2nd Order Issue Labels".
 
