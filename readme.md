@@ -13,7 +13,7 @@
 
 ## High level design of the system
 
-<img src="https://drive.google.com/uc?export=view&id=1AbWcm4bx-gig3hXsFgmTIDbyyuIVdip_" alt="High Level Design" width="600" height="500">
+<img src="https://drive.google.com/uc?export=view&id=1A7zpvz2b2LFfuncLiCL04gHRi8De-GLY" alt="High Level Design" width="600" height="500">
 
 Above we have shown the high level design of our system
 
@@ -25,6 +25,13 @@ We have considered theree data sources
 
 
 ### Description of the Flow
+
+#### Registration Flow
+
+The client registers an app and provides the name and google play store id ( this is done for ease of implementation ). The description, pricing if relevant, other required metadata is fetched by the google play scraper and the first and second order clusters are dynamically generated on a per app basis.
+
+#### Runtime Flow
+
 From the three data source snap ins the data is published to a message queue, the data is fetched by using a cron job within the snap in within the snap in.
 
 The denoiser function polls this queue, processes the messages, and publishes the data to a raw data queue,

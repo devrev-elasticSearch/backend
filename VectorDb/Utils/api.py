@@ -95,3 +95,6 @@ def bulkInsert(indexName, data, saveSize=50):
 
     helpers.bulk(client, actions, chunk_size=saveSize)
     
+def deleteByQuery(indexName, query):
+    return client.delete_by_query(index=indexName, body=query)
+    

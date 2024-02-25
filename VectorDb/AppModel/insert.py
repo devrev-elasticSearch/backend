@@ -6,3 +6,7 @@ def insertAppData(data):
 
 def bulkInsertAppData(data):
     api.bulkInsert(appIndexName, data)
+    
+    
+def deleteByAppName(appName):
+    api.deleteByQuery(appIndexName, {"query": {"match": {"name": appName}}})
