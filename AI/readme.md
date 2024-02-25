@@ -1,6 +1,6 @@
 # AI Backend
 
-Our AI-powered pipeline runs in two phases. When a new app is registered for the first time, the "App-Registration" pipeline comes into play. The **result??** for each app is stored in the database. Later, the "Routing-Based-Soft-Clustering" pipeline clusters (routes) the reviews (or the group of reviews) into various 2nd order issue labels through Semantic Routing.
+Our AI-powered pipeline runs in two phases. When a new app is registered for the first time, the "App-Registration" pipeline comes into play. The pipeline output for each app is stored in the database. Later, the "Routing-Based-Soft-Clustering" pipeline clusters (routes) the reviews (or the group of reviews) into various 2nd order issue labels through Semantic Routing.
 
 ## App-Registration Pipeline
 
@@ -16,6 +16,45 @@ When the target app is registered, the related description of that app is fetche
 `gen_second_order_label_to_multiqry/custom_langchain_tools.py` generates different Multi Queries for each "2nd Order Issue Labels". It helps the semantic router to build a robust semantic sense for each route or issue label.
 
 "2nd Order Issue Labels", "1st Order Issue Labels", and the multi queries are stored in the database and these are used by the next pipeline.
+
+### The output schema:
+```python
+{
+    "name": "PhonePe",
+    "price": "0",
+    "free": "True",
+    "currency": "INR",
+    "inAppProductPrice": "None",
+    "minInstalls": "500000000",
+    "realInstalls": "582525761",
+    "score": "4.4115915",
+    "ratings": "10816247",
+    "description_list": [
+        "Simple and secure payments app",
+        "Link bank account with registered mobile number",
+        ...
+    ],
+    "first_order_labels": [
+        {
+            "name": "Issues related to Payment Problems",
+            "second_order_labels": [
+                "Issues related to Simple and secure payments app",
+                ...
+            ]
+        },
+        ...
+    ],
+    "generated_qrys_for_sec_labels": {
+        "Issues related to Simple and secure payments app": [
+            "The app frequently crashes during payment transactions.",
+            ...
+        ],
+        ...
+    }
+    ...
+}
+```
+
 
 ## Routing-Based-Soft-Clustering Pipeline
 
