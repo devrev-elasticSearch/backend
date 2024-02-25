@@ -43,7 +43,7 @@ def pollSqsQueue(queueUrl,  maxMessages=1, waitTimeSeconds=20):
 
     return messages
 
-def loop(queueUrl,timeInMinutes=10,maxMessages=1,callback=print):
+def loop(queueUrl,timeInMinutes=10,maxMessages=1,callback=print,delete=True):
     while True:
         messages = pollSqsQueue(queueUrl, maxMessages=maxMessages)
         totalMessages = []
@@ -55,10 +55,11 @@ def loop(queueUrl,timeInMinutes=10,maxMessages=1,callback=print):
                 # Delete the message from the queue after processing
                 receiptHandle = message['ReceiptHandle']
 
-                sqs.delete_message(
-                    QueueUrl=queueUrl,
-                    ReceiptHandle=receiptHandle
-                )
+                if(delete):
+                    sqs.delete_message(
+                        QueueUrl=queueUrl,
+                        ReceiptHandle=receiptHandle
+                    )
 
         callback(totalMessages)
         time.sleep(timeInMinutes*60)

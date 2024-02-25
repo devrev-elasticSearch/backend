@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 from VectorDb.AppModel import query as appQuery
 from VectorDb.DataModel import query as dataQuery
+from VectorDb.FeatureModel import query as featureQuery
 import json
 from AI import utils
 from VectorDb.AppModel import insert as appInsert
@@ -137,6 +138,14 @@ def getAppNames():
     res = [x["key"] for x in res]
     return jsonify(res)
 
+@app.route('/api/app/features/getdata',methods=['POST'])
+def getFeatureData():
+    body = getBodyFromRequest(request)
+    if(body == None):
+        return jsonify({"error": "Invalid request"}), 400
+    
+    res = featureQuery.queryAll()
+    return jsonify(res)
 
 if __name__ == '__main__':
     app.run(port=8000,debug=True)

@@ -17,7 +17,10 @@ from Integration.TicketGenerator import generator
 from datetime import datetime
 from AI import ticket_generation
 from AI import utils
+from Integration.Features import loop
+from VectorDb.FeatureModel import mapping as featureMapping
 import json
+
 
 if __name__ == "__main__":
     # sqs.loop(callback=insert.bulkInsert,maxMessages=1,timeInMinutes=1)
@@ -115,7 +118,7 @@ if __name__ == "__main__":
     # api.createMapping(dataMapping.dataIndexName, dataMapping.dataMapping)
     # dummyData = []
 
-    # with open('dummy_app.json') as json_file:
+    # with open('ddruk/AI/datas/standard_app_description_PayTM_v0.json') as json_file:
     #     dummyData = json.load(json_file)
     
     # appInsert.insertAppData(dummyData)
@@ -157,11 +160,11 @@ if __name__ == "__main__":
     # with open('dummy_datamodel.json', 'w') as outfile:
     #     json.dump(d, outfile)
     # dummyData = []    
-    # with open('phase1_result_GooglePay_v0_0_500.json') as json_file:
+    # with open('ddruk/AI/datas/phase1_result_Spotify_v0_0_100.json') as json_file:
     #     dummyData = json.load(json_file)
     
     # for d in dummyData:
-    #     d['app_name'] = "Google Pay"
+    #     d['app_name'] = "Spotify"
     #     d['date'] = int(datetime.timestamp(datetime.strptime(d['date'],"%Y-%m-%d %H:%M:%S")))
     # dataInsert.bulkInsert(dummyData)
     # print(api.getAllRecords(dataMapping.dataIndexName))
@@ -177,8 +180,10 @@ if __name__ == "__main__":
     # print(api.getAllRecords(dataMapping.dataIndexName) )
     # firstOrderLabel = appQuery.queryRandomFirstOrderLabel()
     # print(dataQuery.getRandomHighPriorityDataElementInLastDays(50000))
-    print(utils.get_app_model("com.google.android.apps.nbu.paisa.user","Google Pay"))
+    # print(utils.get_app_model("com.google.android.apps.nbu.paisa.user","Google Pay"))
+    # print(api.getAllRecords(appMapping.appIndexName,size=5))
     # generator.generateTickets()
+    loop.loop()
     #print(ticket_generation.issue_ticket_based_on_high_prio_v2(dataQuery.queryForDataByFirstOrderLabelInPrevDays(dataQuery.queryMaxFirstOrderLabel(1000)),dataQuery.queryMaxFirstOrderLabel(1000),1))
     print("hello")
 
