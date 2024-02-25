@@ -2,6 +2,12 @@ from .common_imports import *
 
 load_dotenv()
 
+
+
+# This function assigns a title to a list of groups of similar strings
+# Input: groups - List of groups of similar strings
+# Output: Title for the list of groups
+# The title is assigned using OpenAI's GPT-3.5-turbo-0613 Function Call and LangChain Agent
 def assign_title_to_groups(groups,custom_input_template = None):
   titles = [None]
 
@@ -60,6 +66,10 @@ def assign_title_to_groups(groups,custom_input_template = None):
   return titles[0]
 
 
+
+
+
+
 def union_lists(list1:List[str], list2:List[str],threshold=0.85):
     encoder = OpenAIEncoder(
         openai_api_key=os.getenv("OPENAI_API"),
@@ -88,6 +98,17 @@ def union_lists(list1:List[str], list2:List[str],threshold=0.85):
     return union
 
 
+
+
+
+
+
+# This function groups similar strings together
+# Input: L - List of strings
+#        threshold - Similarity threshold
+# Output: List of groups of similar strings
+# Embedding is done using OpenAI's text-embedding-ada-002
+# The similarity is calculated using the dot product of the embeddings
 def group_similar_strings(L,threshold=0.85):
     groups = []
     used_indices = set()

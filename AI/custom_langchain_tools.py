@@ -8,8 +8,8 @@ load_dotenv()
 
 
 # This function is used to extract the app description from the google play store
+# Input: app_id, app_name
 # The function returns the app description
-
 def convert_app_description_to_summary_list(api_result_app_description):
   summarized_app_description_list = [None]
   class FeatureAppenderToolCheckInput(BaseModel):
@@ -64,7 +64,6 @@ def convert_app_description_to_summary_list(api_result_app_description):
 # This function is used to extract the key words from the summarized app description and the user reviews
 # The function returns the positive and negative key words
 # The function also stores the key words in the respective lists
-
 def key_word_extractor(summarized_app_description_text, review, p_flag = True, n_flag = True, s_flag = False):
   postive_points = []
   negative_points = []
@@ -216,6 +215,8 @@ def gen_multiqry(qry_text,higher_level_description,number=6):
 
 # This function is used to generate multiple queries to generate multiple negative aspects of an app from multiple perspectives
 # The function returns the generated reviews for each cluster
+# Input: second_order_labels, general_descripion, count_per_label
+# Output: cluster_to_multiqry - Dictionary of second order labels to multiqry
 def gen_second_order_label_to_multiqry(second_order_labels, general_descripion,count_per_label):
   cluster_to_multiqry = {}
   for _second_order_raw_cluster in second_order_labels:

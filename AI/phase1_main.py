@@ -4,7 +4,6 @@ from .utils import *
 from .custom_langchain_tools import *
 from .taggers_and_routers import *
 
-
 if __name__ == "__main__":
     os.environ["OPENAI_API"]=getpass("Enter the OpenAI API Key: ")
     os.environ["OPENAI_ORG"]=getpass("Enter the OpenAI ORG Key: ")
@@ -27,6 +26,7 @@ if __name__ == "__main__":
     price_flag=False # Are we processing the price
     featreq_flag=False # Are we processing the feature requests
     
+    # Runs the "Routing-based-Soft-Clustering" pipeline
     phase1_result,phase1_cluster_labels_meta = run_phase1(
         all_reviews,
         app_meta,

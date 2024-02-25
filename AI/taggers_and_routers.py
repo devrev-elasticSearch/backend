@@ -3,6 +3,10 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+# This  function creates a route layer for the second order labels
+# Input: second_order_label_to_multiqry - Dictionary of second order labels to multiqry
+# Output: Route Layer for the second order labels
+# Uses Aurelio AI semantic routing
 def get_routelayer_for_second_order_layer(second_order_label_to_multiqry):
   def create_routes_for_cluster_to_multiqry(cluster_to_multiqry):
     # Routes for different issues
@@ -26,7 +30,10 @@ def get_routelayer_for_second_order_layer(second_order_label_to_multiqry):
 
 
 
-
+# Langchain Tagging Chain for feature requests
+# LangChain Tagging Chain
+# Input: User review
+# Output: Tagged feature requests
 def create_phase1_classif_tagger():
   phase1_order_tagging_schema = {
       "properties": {
@@ -57,6 +64,10 @@ def create_phase1_classif_tagger():
 
 
 
+# Langchain Extraction Chain for feature requests
+# LangChain Extraction Chain
+# Input: User review
+# Output: Extracted feature requests
 
 def get_price_sentiment(review_text):
   # keywords = review['keywords']

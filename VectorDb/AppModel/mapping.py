@@ -10,7 +10,7 @@ appMapping = {
                 "name":{ "type":"keyword" },
                 "second_order_labels":{"type":"keyword"}
             }
-        },
+        },P
         "price":{ "type":"keyword" },
         "free":{"type":"keyword"},
         "currency":{"type":"keyword"},

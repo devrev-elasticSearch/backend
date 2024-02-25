@@ -5,6 +5,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+# Group similar keywords
+# Uses the semantic similarity of the keywords to group them
 def group_keywords_ticket(raw_keywords, num_threshold=2,score_threshold=0.90):
   groups = group_similar_strings(raw_keywords,threshold=score_threshold)
   combined_keywords = []
@@ -30,6 +32,13 @@ def group_keywords_ticket(raw_keywords, num_threshold=2,score_threshold=0.90):
       combined_keywords.append(combo)
   return combined_keywords
 
+
+
+
+# Call this function to create a ticket based on high priority reviews
+# It takes a list of high priority reviews (Of type of review frame), a common second order label(String) and the frequency of the urgent issues(Int)
+# Uses gpt-3.5-turbo-0613 Temparature 0.5 to summarize the reviews and assign a title to the ticket
+# Uses LangChain Agent
 def create_ticket(high_prio_review_list:list, common_label:str, urgent_frequency:int):
   # Now all keywords
   high_prio_keywords = []
@@ -82,30 +91,12 @@ def create_ticket(high_prio_review_list:list, common_label:str, urgent_frequency
   return full_ticket
 
 
-# def issue_ticket_based_on_high_prio(phase1_result,count_cutoff=5):
-#   freq = defaultdict(list)
-#   for _ in phase1_result:
-#     pri = phase1_result[_]['tagging_metadata']['priority']
-#     if pri == 'High' or pri == 'Critical':
-#       k_list = list(phase1_result[_]['second_order_labels']['label_list'])
-#       for k in k_list:
-#         freq[k].append(phase1_result[_])
-#         freq[k][-1]['id'] = _
 
-#   freq = dict(freq)
-#   tickets = {}
-#   for issue in freq:
-#     if issue != 'other issues' and len(freq[issue])>count_cutoff:
-#       high_prio_review_list = freq[issue]
-#       common_second_order_label =  issue
-#       urgent_frequency = len(freq[issue])
-#       tickets[issue] = create_ticket(high_prio_review_list, common_second_order_label, urgent_frequency)
-
-#   return tickets
-
-
-
-
+# Issue ticket based on high priority reviews
+# This function takes a list of reviews and returns a ticket for each high priority issue under each first order label
+# The function also takes a fixed first order label to issue the ticket under
+# If the fixed first order label is not present in the high priority reviews, it returns a dummy ticket
+# The function also takes a count cutoff to issue a ticket for a high priority issue
 def issue_ticket_based_on_high_prio_v2(standad_phase1_result,fixed_first_order_label="None",count_cutoff=5):
   freq = defaultdict(list)
   for _,_res in enumerate(standad_phase1_result):

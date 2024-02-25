@@ -1,5 +1,10 @@
 from common_imports import *
 
+
+# Tiktoken is a tokenization library that is used to tokenize the text
+# It is used to split the text into chunks of 200 tokens
+# Overlapping is set to 20 tokens
+# The length function is set to the tiktoken length function
 class TikTokenUtil:
   def __init__(self,verbose=0):
     self.tokenizer = tiktoken.get_encoding('cl100k_base')
@@ -17,16 +22,16 @@ class TikTokenUtil:
     if self.verbose:
       print(f"""Min : {min(token_counts)}    Avg: {int(sum(token_counts) / len(token_counts))}   Max: {max(token_counts)}""")
       # set style and color palette for the plot
-      sns.set_style("whitegrid")
-      sns.set_palette("muted")
-      # create histogram
-      plt.figure(figsize=(4, 2))
-      sns.histplot(token_counts, kde=False, bins=50)
-      # customize the plot info
-      plt.title("Token Counts Histogram")
-      plt.xlabel("Token Count")
-      plt.ylabel("Frequency")
-      plt.show()
+      # sns.set_style("whitegrid")
+      # sns.set_palette("muted")
+      # # create histogram
+      # plt.figure(figsize=(4, 2))
+      # sns.histplot(token_counts, kde=False, bins=50)
+      # # customize the plot info
+      # plt.title("Token Counts Histogram")
+      # plt.xlabel("Token Count")
+      # plt.ylabel("Frequency")
+      # plt.show()
     return res
 
   def tiktoken_len(self, text):

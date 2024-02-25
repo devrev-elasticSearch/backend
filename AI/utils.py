@@ -148,6 +148,7 @@ def run_phase1(vectors, app_meta,start_index=None,end_index=None,chunk_mode=Fals
   first_order_to_sec_order_labels = app_meta['first_order_to_sec_order_labels']
   sec_order_to_first_order_labels = {value: key for key, values in first_order_to_sec_order_labels.items() for value in values}
 
+  # Routing layer for second order labels
   rl = get_routelayer_for_second_order_layer(second_order_label_to_multiqry)
   tagging_chain = create_phase1_classif_tagger()
 
@@ -159,6 +160,8 @@ def run_phase1(vectors, app_meta,start_index=None,end_index=None,chunk_mode=Fals
   for _vid,_vec in enumerate(list(vectors)[start_index:end_index]): 
     print(f"Processing {_vid+1}/{__total_len} ...")
     _vtext = vectors[_vid]["text"]
+    # Extracting the phrases from the review text
+    # _pos stores the positive phrases and _negs stores the negative phrases
     _pos ,_negs = key_word_extractor(summarized_app_description_text, _vtext,p_flag=p_flag,s_flag=not chunk_mode)
     phase1_result[_vid] = {'keywords':_negs}
 
