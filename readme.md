@@ -13,7 +13,7 @@
 
 ## High level design of the system
 
-<img src="https://drive.google.com/file/d/12vURS1i0vYB4zLVmehXEoUwoMYssPsSh/view?usp=sharing" alt="High Level Design" width="600" height="500">
+<img src="https://drive.google.com/uc?export=view&id=12vURS1i0vYB4zLVmehXEoUwoMYssPsSh" alt="High Level Design" width="600" height="500">
 
 Above we have shown the high level design of our system
 
