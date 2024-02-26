@@ -5,9 +5,16 @@ from VectorDb.FeatureModel import query as featureQuery
 import json
 from AI import utils
 from VectorDb.AppModel import insert as appInsert
+from flask_executor import Executor
 
+def backGroundProcessAppModel(appData,description):
+    appName = appData["name"]
+    appData = utils.augment_multiqry_to_standard_app_description(appData,description)
+    appInsert.updateByAppName(appName,appData)
+    return
 
 app = Flask(__name__)
+executor = Executor(app)
 
 def getBodyFromRequest(request):
     try:
@@ -135,7 +142,13 @@ def insertAppModel():
     if "app_model" not in body:
         return jsonify({"error": "Invalid request"}), 400
     
-    appInsert.insertAppData(body['app_model'])
+    if(appQuery.queryByAppName(body["app_model"])):
+        return jsonify({"error": "App already exists"}), 500
+    
+    if("description" not in body):
+        return jsonify({"error": "Description not present"}), 500
+    
+    executor.submit(backGroundProcessAppModel,body["app_model"],body["description"])
     return jsonify({"success": "Data inserted"})
 
 

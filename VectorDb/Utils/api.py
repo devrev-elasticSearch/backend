@@ -71,6 +71,10 @@ def insertRecord(indexName, record):
 def updateRecord(indexName, id, record):
     return client.update(index = indexName, id=id, body={"doc": record})
 
+def updateRecordByField(indexName, field, value, record):
+    #select record by value of field and update it to record
+    return client.update_by_query(index=indexName, body={"query": {"match": {field: value}}, "script": {"source": "ctx._source = params", "params": record}})
+
 #data is a json object
 def bulkInsert(indexName, data, saveSize=50):
 

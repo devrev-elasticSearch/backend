@@ -110,7 +110,7 @@ def generate_full_app_descritpion(api_result_app, generic_raw_clusters, general_
 
 
 # Time Consuming
-def augment_multiqry_to_standard_app_description(standard_app_description, general_descripion ,multi_qry_count_per_label = 10):
+def augment_multiqry_to_standard_app_description(standard_app_description, general_descripion ,multi_qry_count_per_label = 5):
     # Sample general_descripion = "App reviews of a Payment and UPI App"
     second_order_labels = []
     for _ in standard_app_description['first_order_labels']:

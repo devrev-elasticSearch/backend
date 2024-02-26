@@ -7,6 +7,11 @@ def insertAppData(data):
 def bulkInsertAppData(data):
     api.bulkInsert(appIndexName, data)
     
+
+def updateByAppName(appName, data):
+    api.updateRecordByField(appIndexName, "name", appName, data)
+    return
+    
     
 def deleteByAppName(appName):
     api.deleteByQuery(appIndexName, {"query": {"match": {"name": appName}}})
