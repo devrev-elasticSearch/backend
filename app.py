@@ -142,7 +142,7 @@ def insertAppModel():
     if "app_model" not in body:
         return jsonify({"error": "Invalid request"}), 400
     
-    if(appQuery.queryByAppName(body["app_model"])):
+    if(appQuery.isAppNamePresent(body["app_model"])):
         return jsonify({"error": "App already exists"}), 500
     
     if("description" not in body):
