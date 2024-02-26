@@ -82,9 +82,12 @@ def getappModel():
         return jsonify({"error": "Invalid request"}), 400
     appName = body["app_name"]
     appId = body["app_id"]
-    res = utils.get_app_model(appId,appName)
+    
+    if ("general_label_list" in body) and ("description" in body):
+        res = utils.get_app_model(appId,appName,body["general_label_list"],body["description"])
+    else:
+        res= utils.get_app_model(appId,appName)
     return jsonify(res)
-
 
 '''
 Can add filters
@@ -128,7 +131,11 @@ def insertAppModel():
     body = getBodyFromRequest(request)
     if(body == None):
         return jsonify({"error": "Invalid request"}), 400
-    appInsert.insertAppData(body)
+    
+    if "app_model" not in body:
+        return jsonify({"error": "Invalid request"}), 400
+    
+    appInsert.insertAppData(body['app_model'])
     return jsonify({"success": "Data inserted"})
 
 
