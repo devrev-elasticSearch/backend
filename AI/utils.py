@@ -8,6 +8,20 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+
+
+
+
+############################################################################################################
+
+######                          Utils for App-Regristration Phase 0 Pipeline                          ######           
+
+############################################################################################################
+
+
+
+
+
 # This function is used to extract the app first order labels and their mapping to second order labels
 def create_first_order_labels(user_defined_raw_clusters, generated_raw_clusters, num_threshold=1,score_threshold=0.90):
   groups = group_similar_strings(generated_raw_clusters,threshold=score_threshold)
@@ -95,16 +109,21 @@ def generate_full_app_descritpion(api_result_app, generic_raw_clusters, general_
     return standard_app_description
 
 
+# Time Consuming
+def augment_multiqry_to_standard_app_description(standard_app_description, general_descripion ,multi_qry_count_per_label = 10):
+    # Sample general_descripion = "App reviews of a Payment and UPI App"
+    second_order_labels = []
+    for _ in standard_app_description['first_order_labels']:
+        second_order_labels.extend(_['second_order_labels'])
+    second_order_label_to_multiqry = gen_second_order_label_to_multiqry(second_order_labels, general_descripion = general_descripion, count_per_label = multi_qry_count_per_label)
+    standard_app_description['generated_qrys_for_sec_labels'] = second_order_label_to_multiqry
+    return standard_app_description
 
+############################################################################################################
 
+######                          Utils for Routing-Based-Soft-Clustering Phase 1 Pipeline              ######
 
-
-
-
-
-
-
-
+############################################################################################################
 
 
 
