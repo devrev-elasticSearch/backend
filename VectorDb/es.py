@@ -6,7 +6,7 @@ from requests_aws4auth import AWS4Auth
 load_dotenv()
 domainName = os.getenv("domainName")
 password = os.getenv("password")
-username = os.getenv("username")
+username = os.getenv("username1")
 
 # basicAuth = f"{awsAccessKey}:{awsSecretKey}"
 
