@@ -5,7 +5,7 @@ from VectorDb.FeatureModel import query as featureQuery
 import json
 from AI import utils
 from VectorDb.AppModel import insert as appInsert
-
+from flask_cors import CORS
 def backGroundProcessAppModel(appData,description):
     appName = appData["name"]
     appData = utils.augment_multiqry_to_standard_app_description(appData,description)
@@ -13,7 +13,7 @@ def backGroundProcessAppModel(appData,description):
     return
 
 app = Flask(__name__)
-
+CORS(app)
 def getBodyFromRequest(request):
     try:
         return request.get_json()
