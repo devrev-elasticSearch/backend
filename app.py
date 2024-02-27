@@ -150,6 +150,22 @@ def insertAppModel():
     return jsonify({"success": "Data inserted"})
 
 
+@app.route('/api/app/appmodel/delete',methods=['POST'])
+def deleteAppModel():
+    body = getBodyFromRequest(request)
+    if(body == None):
+        return jsonify({"error": "Invalid request"}), 400
+    
+    if "app_name" not in body:
+        return jsonify({"error": "Invalid request"}), 400
+    
+    if(not appQuery.isAppNamePresent(body["app_name"])):
+        return jsonify({"error": "App does not exist"}), 500
+    
+    appInsert.deleteByAppName(body["app_name"])
+    return jsonify({"success": "Data deleted"})
+
+
 @app.route('/api/app/appmodel/appnames',methods=['GET'])
 def getAppNames():
     res = appQuery.queryUniqueAppNames()
