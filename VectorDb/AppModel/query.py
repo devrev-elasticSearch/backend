@@ -17,7 +17,7 @@ def isAppNamePresent(appName, indexName=appIndexName):
         }
     }
     res = api.client.search(index=indexName, body=dataQuery, ignore=400)
-    return res['hits']["total"] > 0
+    return res['hits']["total"]['value'] > 0
 
 
 def queryByAppName(appName, indexName=appIndexName):
