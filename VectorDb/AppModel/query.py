@@ -20,6 +20,17 @@ def isAppNamePresent(appName, indexName=appIndexName):
     return res['hits']["total"]['value'] > 0
 
 
+def getIdFromAppName(appName, indexName=appIndexName):
+    dataQuery={
+        "query": {
+            "term": {
+                "name": appName
+            }
+        }
+    }
+    res = api.client.search(index=indexName, body=dataQuery, ignore=400)
+    return getHitsFromResult(res)[0]["_id"]
+
 def queryByAppName(appName, indexName=appIndexName):
     # print(api.getAllRecords(indexName))
     dataQuery={

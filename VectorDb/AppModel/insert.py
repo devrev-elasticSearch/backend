@@ -11,6 +11,10 @@ def bulkInsertAppData(data):
 def updateByAppName(appName, data):
     api.updateRecordByField(appIndexName, "name", appName, data)
     return
+
+def updateById(id, data):
+    api.updateRecord(appIndexName, id, data)
+    return
     
     
 def deleteByAppName(appName):

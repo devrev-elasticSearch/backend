@@ -6,10 +6,11 @@ import json
 from AI import utils
 from VectorDb.AppModel import insert as appInsert
 from flask_cors import CORS
+
 def backGroundProcessAppModel(appData,description):
     appName = appData["name"]
     appData = utils.augment_multiqry_to_standard_app_description(appData,description)
-    appInsert.updateByAppName(appName,appData)
+    appInsert.insertAppData(appData)
     return
 
 app = Flask(__name__)
