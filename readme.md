@@ -1,6 +1,6 @@
 # Design of the Backend
 
-### AI Backend readme : [AI/readme.md](AI/readme.md)
+### AI Backend : [AI Backend](AI)
 
 ## Techonologies Used
 
