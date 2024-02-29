@@ -1,6 +1,6 @@
 # Design of the Backend
 
-### AI Backend : [AI Backend](AI)
+#### AI Backend : [go to AI folder](AI)
 
 ## Techonologies Used
 
